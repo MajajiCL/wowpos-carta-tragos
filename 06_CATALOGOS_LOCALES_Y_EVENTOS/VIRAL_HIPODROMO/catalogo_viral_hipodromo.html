@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOWPOS.CL • Catálogo Oficial Viral Hipódromo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b0f19; color: #f1f5f9; }
+    .card-zoom:hover img { transform: scale(1.08); }
+    .glow-card:hover { box-shadow: 0 10px 30px -10px rgba(232, 33, 124, 0.4); border-color: rgba(232, 33, 124, 0.4); }
+  </style>
+</head>
+<body class="p-4 sm:p-8 min-h-screen">
+
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <header class="mb-8 border-b border-slate-800 pb-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2.5">
+          <span class="px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-wider">
+            WOWPOS.CL • CARTA OFICIAL
+          </span>
+          <span class="text-xs text-slate-400 font-semibold">25 Productos Listos</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-black text-white mt-2">
+          Catálogo <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-rose-400 to-amber-400">Viral Hipódromo</span>
+        </h1>
+        <p class="text-sm text-slate-400 mt-1">Imágenes en alta resolución y carpetas organizadas para posts de redes sociales, tótem y POS.</p>
+      </div>
+
+      <!-- Controls -->
+      <div class="w-full md:w-auto flex flex-col sm:flex-row items-center gap-3">
+        <input type="text" id="searchInput" placeholder="Buscar trago o precio..." 
+          class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-pink-500 w-full sm:w-64">
+        <div class="flex rounded-xl bg-slate-900 p-1 border border-slate-800 w-full sm:w-auto justify-center">
+          <button onclick="filterCategory('all')" id="btn-all" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-pink-600 text-white transition-all">Todos (25)</button>
+          <button onclick="filterCategory('Individuales y Vasos')" id="btn-ind" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-white transition-all">Vasos (15)</button>
+          <button onclick="filterCategory('Botellas')" id="btn-bot" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-white transition-all">Botellas (10)</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-gradient-to-r from-pink-600 to-rose-600 text-white px-5 py-3 rounded-2xl text-xs font-bold shadow-2xl opacity-0 pointer-events-none transition-opacity duration-300 z-50 flex items-center gap-2">
+      <span>✅</span> <span id="toastMsg">Copiado al portapapeles</span>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="productsGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5"></div>
+  </div>
+
+  <script>
+    const items = [{"id": 1, "nombre": "Agua", "categoria": "Individuales y Vasos", "precio": 5000, "precio_fmt": "$5.000", "folder": "01_Agua_$5000", "img_file": "01_Agua_$5000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/01_Agua_$5000/01_Agua_$5000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\01_Agua_$5000\\01_Agua_$5000.jpg"}, {"id": 2, "nombre": "Bebida en lata", "categoria": "Individuales y Vasos", "precio": 3000, "precio_fmt": "$3.000", "folder": "02_Bebida_en_lata_$3000", "img_file": "02_Bebida_en_lata_$3000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/02_Bebida_en_lata_$3000/02_Bebida_en_lata_$3000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\02_Bebida_en_lata_$3000\\02_Bebida_en_lata_$3000.jpg"}, {"id": 3, "nombre": "Redbull", "categoria": "Individuales y Vasos", "precio": 5000, "precio_fmt": "$5.000", "folder": "03_Redbull_$5000", "img_file": "03_Redbull_$5000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/03_Redbull_$5000/03_Redbull_$5000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\03_Redbull_$5000\\03_Redbull_$5000.jpg"}, {"id": 4, "nombre": "Cerveza", "categoria": "Individuales y Vasos", "precio": 5000, "precio_fmt": "$5.000", "folder": "04_Cerveza_$5000", "img_file": "04_Cerveza_$5000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/04_Cerveza_$5000/04_Cerveza_$5000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\04_Cerveza_$5000\\04_Cerveza_$5000.jpg"}, {"id": 5, "nombre": "Tropical Gin", "categoria": "Individuales y Vasos", "precio": 8000, "precio_fmt": "$8.000", "folder": "05_Tropical_Gin_$8000", "img_file": "05_Tropical_Gin_$8000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/05_Tropical_Gin_$8000/05_Tropical_Gin_$8000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\05_Tropical_Gin_$8000\\05_Tropical_Gin_$8000.jpg"}, {"id": 6, "nombre": "Ramazzotti", "categoria": "Individuales y Vasos", "precio": 8000, "precio_fmt": "$8.000", "folder": "06_Ramazzotti_$8000", "img_file": "06_Ramazzotti_$8000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/06_Ramazzotti_$8000/06_Ramazzotti_$8000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\06_Ramazzotti_$8000\\06_Ramazzotti_$8000.jpg"}, {"id": 7, "nombre": "Vaso Jack variedades", "categoria": "Individuales y Vasos", "precio": 8000, "precio_fmt": "$8.000", "folder": "07_Vaso_Jack_variedades_$8000", "img_file": "07_Vaso_Jack_variedades_$8000.webp", "rel_path": "01_INDIVIDUALES_Y_VASOS/07_Vaso_Jack_variedades_$8000/07_Vaso_Jack_variedades_$8000.webp", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\07_Vaso_Jack_variedades_$8000\\07_Vaso_Jack_variedades_$8000.webp"}, {"id": 8, "nombre": "Vaso Johnnie", "categoria": "Individuales y Vasos", "precio": 7000, "precio_fmt": "$7.000", "folder": "08_Vaso_Johnnie_$7000", "img_file": "08_Vaso_Johnnie_$7000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/08_Vaso_Johnnie_$7000/08_Vaso_Johnnie_$7000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\08_Vaso_Johnnie_$7000\\08_Vaso_Johnnie_$7000.jpg"}, {"id": 9, "nombre": "Vaso pisco manzana", "categoria": "Individuales y Vasos", "precio": 8000, "precio_fmt": "$8.000", "folder": "09_Vaso_pisco_manzana_$8000", "img_file": "09_Vaso_pisco_manzana_$8000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/09_Vaso_pisco_manzana_$8000/09_Vaso_pisco_manzana_$8000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\09_Vaso_pisco_manzana_$8000\\09_Vaso_pisco_manzana_$8000.jpg"}, {"id": 10, "nombre": "Vaso pisco mistral", "categoria": "Individuales y Vasos", "precio": 6000, "precio_fmt": "$6.000", "folder": "10_Vaso_pisco_mistral_$6000", "img_file": "10_Vaso_pisco_mistral_$6000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/10_Vaso_pisco_mistral_$6000/10_Vaso_pisco_mistral_$6000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\10_Vaso_pisco_mistral_$6000\\10_Vaso_pisco_mistral_$6000.jpg"}, {"id": 11, "nombre": "Vaso de pisco Nobel", "categoria": "Individuales y Vasos", "precio": 7000, "precio_fmt": "$7.000", "folder": "11_Vaso_de_pisco_Nobel_$7000", "img_file": "11_Vaso_de_pisco_Nobel_$7000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/11_Vaso_de_pisco_Nobel_$7000/11_Vaso_de_pisco_Nobel_$7000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\11_Vaso_de_pisco_Nobel_$7000\\11_Vaso_de_pisco_Nobel_$7000.jpg"}, {"id": 12, "nombre": "Shot de tequila", "categoria": "Individuales y Vasos", "precio": 3000, "precio_fmt": "$3.000", "folder": "12_Shot_de_tequila_$3000", "img_file": "12_Shot_de_tequila_$3000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/12_Shot_de_tequila_$3000/12_Shot_de_tequila_$3000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\12_Shot_de_tequila_$3000\\12_Shot_de_tequila_$3000.jpg"}, {"id": 13, "nombre": "Shot de tequila x4", "categoria": "Individuales y Vasos", "precio": 10000, "precio_fmt": "$10.000", "folder": "13_Shot_de_tequila_x4_$10000", "img_file": "13_Shot_de_tequila_x4_$10000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/13_Shot_de_tequila_x4_$10000/13_Shot_de_tequila_x4_$10000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\13_Shot_de_tequila_x4_$10000\\13_Shot_de_tequila_x4_$10000.jpg"}, {"id": 14, "nombre": "Mistral Ice", "categoria": "Individuales y Vasos", "precio": 5000, "precio_fmt": "$5.000", "folder": "14_Mistral_Ice_$5000", "img_file": "14_Mistral_Ice_$5000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/14_Mistral_Ice_$5000/14_Mistral_Ice_$5000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\14_Mistral_Ice_$5000\\14_Mistral_Ice_$5000.jpg"}, {"id": 15, "nombre": "Spirit", "categoria": "Individuales y Vasos", "precio": 5000, "precio_fmt": "$5.000", "folder": "15_Spirit_$5000", "img_file": "15_Spirit_$5000.jpg", "rel_path": "01_INDIVIDUALES_Y_VASOS/15_Spirit_$5000/15_Spirit_$5000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\01_INDIVIDUALES_Y_VASOS\\15_Spirit_$5000\\15_Spirit_$5000.jpg"}, {"id": 16, "nombre": "Jack Daniel variedades", "categoria": "Botellas", "precio": 100000, "precio_fmt": "$100.000", "folder": "01_Jack_Daniel_variedades_$100000", "img_file": "01_Jack_Daniel_variedades_$100000.png", "rel_path": "02_BOTELLAS/01_Jack_Daniel_variedades_$100000/01_Jack_Daniel_variedades_$100000.png", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\02_BOTELLAS\\01_Jack_Daniel_variedades_$100000\\01_Jack_Daniel_variedades_$100000.png"}, {"id": 17, "nombre": "Johnnie black", "categoria": "Botellas", "precio": 100000, "precio_fmt": "$100.000", "folder": "02_Johnnie_black_$100000", "img_file": "02_Johnnie_black_$100000.png", "rel_path": "02_BOTELLAS/02_Johnnie_black_$100000/02_Johnnie_black_$100000.png", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\02_BOTELLAS\\02_Johnnie_black_$100000\\02_Johnnie_black_$100000.png"}, {"id": 18, "nombre": "Johnnie Rojo", "categoria": "Botellas", "precio": 80000, "precio_fmt": "$80.000", "folder": "03_Johnnie_Rojo_$80000", "img_file": "03_Johnnie_Rojo_$80000.png", "rel_path": "02_BOTELLAS/03_Johnnie_Rojo_$80000/03_Johnnie_Rojo_$80000.png", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\02_BOTELLAS\\03_Johnnie_Rojo_$80000\\03_Johnnie_Rojo_$80000.png"}, {"id": 19, "nombre": "Pisco mistral", "categoria": "Botellas", "precio": 60000, "precio_fmt": "$60.000", "folder": "04_Pisco_mistral_$60000", "img_file": "04_Pisco_mistral_$60000.png", "rel_path": "02_BOTELLAS/04_Pisco_mistral_$60000/04_Pisco_mistral_$60000.png", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\02_BOTELLAS\\04_Pisco_mistral_$60000\\04_Pisco_mistral_$60000.png"}, {"id": 20, "nombre": "Pisco Nobel", "categoria": "Botellas", "precio": 70000, "precio_fmt": "$70.000", "folder": "05_Pisco_Nobel_$70000", "img_file": "05_Pisco_Nobel_$70000.png", "rel_path": "02_BOTELLAS/05_Pisco_Nobel_$70000/05_Pisco_Nobel_$70000.png", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\02_BOTELLAS\\05_Pisco_Nobel_$70000\\05_Pisco_Nobel_$70000.png"}, {"id": 21, "nombre": "Pisco Manzana", "categoria": "Botellas", "precio": 70000, "precio_fmt": "$70.000", "folder": "06_Pisco_Manzana_$70000", "img_file": "06_Pisco_Manzana_$70000.jpg", "rel_path": "02_BOTELLAS/06_Pisco_Manzana_$70000/06_Pisco_Manzana_$70000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\02_BOTELLAS\\06_Pisco_Manzana_$70000\\06_Pisco_Manzana_$70000.jpg"}, {"id": 22, "nombre": "Gin bombay", "categoria": "Botellas", "precio": 70000, "precio_fmt": "$70.000", "folder": "07_Gin_bombay_$70000", "img_file": "07_Gin_bombay_$70000.jpg", "rel_path": "02_BOTELLAS/07_Gin_bombay_$70000/07_Gin_bombay_$70000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\02_BOTELLAS\\07_Gin_bombay_$70000\\07_Gin_bombay_$70000.jpg"}, {"id": 23, "nombre": "Espumante con 4 redbull", "categoria": "Botellas", "precio": 60000, "precio_fmt": "$60.000", "folder": "08_Espumante_con_4_redbull_$60000", "img_file": "08_Espumante_con_4_redbull_$60000.png", "rel_path": "02_BOTELLAS/08_Espumante_con_4_redbull_$60000/08_Espumante_con_4_redbull_$60000.png", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\02_BOTELLAS\\08_Espumante_con_4_redbull_$60000\\08_Espumante_con_4_redbull_$60000.png"}, {"id": 24, "nombre": "Tequila don Julio", "categoria": "Botellas", "precio": 120000, "precio_fmt": "$120.000", "folder": "09_Tequila_don_Julio_$120000", "img_file": "09_Tequila_don_Julio_$120000.jpg", "rel_path": "02_BOTELLAS/09_Tequila_don_Julio_$120000/09_Tequila_don_Julio_$120000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\02_BOTELLAS\\09_Tequila_don_Julio_$120000\\09_Tequila_don_Julio_$120000.jpg"}, {"id": 25, "nombre": "Tequila sombrero negro", "categoria": "Botellas", "precio": 60000, "precio_fmt": "$60.000", "folder": "10_Tequila_sombrero_negro_$60000", "img_file": "10_Tequila_sombrero_negro_$60000.jpg", "rel_path": "02_BOTELLAS/10_Tequila_sombrero_negro_$60000/10_Tequila_sombrero_negro_$60000.jpg", "abs_path": "C:\\Users\\mandr\\OneDrive\\Documentos\\WOWPOS.CL\\Viral Hipódromo\\02_BOTELLAS\\10_Tequila_sombrero_negro_$60000\\10_Tequila_sombrero_negro_$60000.jpg"}];
+
+    function renderGrid(data) {
+      const grid = document.getElementById('productsGrid');
+      if (data.length === 0) {
+        grid.innerHTML = '<div class="col-span-full py-16 text-center text-slate-500 text-sm">No se encontraron productos con ese filtro.</div>';
+        return;
+      }
+      grid.innerHTML = data.map(p => {
+        const isBotella = p.categoria === 'Botellas';
+        return `
+          <div class="glow-card card-zoom bg-slate-900/80 border border-slate-800 hover:border-slate-700 rounded-2xl p-3 sm:p-4 flex flex-col justify-between transition-all">
+            <div>
+              <div class="relative bg-slate-950 rounded-xl overflow-hidden aspect-square flex items-center justify-center mb-3 border border-slate-800/80">
+                <img src="${p.rel_path}" alt="${p.nombre}" class="max-h-full max-w-full object-contain transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 left-2 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md ${isBotella ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' : 'bg-pink-500/20 text-pink-300 border border-pink-500/30'}">
+                  ${isBotella ? '🍾 Botella' : '🍸 Vaso'}
+                </span>
+              </div>
+              <div class="text-[10px] font-mono text-slate-500">#${String(p.id).padStart(2, '0')}</div>
+              <h3 class="font-bold text-white text-xs sm:text-sm line-clamp-1 mt-0.5" title="${p.nombre}">${p.nombre}</h3>
+              <div class="text-base sm:text-lg font-black text-amber-400 mt-1">${p.precio_fmt}</div>
+            </div>
+            
+            <div class="mt-3 pt-2.5 border-t border-slate-800/80 flex gap-1.5">
+              <button onclick="copyToClipboard('${p.rel_path}', 'Ruta relativa copiada')" 
+                class="flex-1 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-[11px] font-semibold transition-colors" title="Copiar ruta relativa">
+                📋 Ruta
+              </button>
+              <a href="${p.rel_path}" download="${p.img_file}" 
+                class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] font-semibold flex items-center justify-center transition-colors" title="Descargar foto">
+                💾
+              </a>
+              <a href="${p.rel_path}" target="_blank" 
+                class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] font-semibold flex items-center justify-center transition-colors" title="Ver en tamaño completo">
+                👁️
+              </a>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    let currentCategory = 'all';
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-pink-600', 'text-white');
+        b.classList.add('text-slate-400');
+      });
+      if (cat === 'all') document.getElementById('btn-all').classList.add('bg-pink-600', 'text-white');
+      if (cat === 'Individuales y Vasos') document.getElementById('btn-ind').classList.add('bg-pink-600', 'text-white');
+      if (cat === 'Botellas') document.getElementById('btn-bot').classList.add('bg-pink-600', 'text-white');
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const filtered = items.filter(p => {
+        const matchCat = (currentCategory === 'all' || p.categoria === currentCategory);
+        const matchQuery = (!query || p.nombre.toLowerCase().includes(query) || p.precio_fmt.includes(query) || String(p.precio).includes(query));
+        return matchCat && matchQuery;
+      });
+      renderGrid(filtered);
+    }
+
+    document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+    function copyToClipboard(text, msg) {
+      navigator.clipboard.writeText(text).then(() => {
+        const toast = document.getElementById('toast');
+        document.getElementById('toastMsg').innerText = msg;
+        toast.classList.remove('opacity-0', 'pointer-events-none');
+        setTimeout(() => toast.classList.add('opacity-0', 'pointer-events-none'), 2200);
+      });
+    }
+
+    renderGrid(items);
+  </script>
+</body>
+</html>

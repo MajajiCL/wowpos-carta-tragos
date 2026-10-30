@@ -30,7 +30,12 @@ antigravity/
 │
 ├── 03_COCTELES_Y_VASOS_PREPARADOS/    <- Vasos servidos (Spritz, Tiki, Mojito, Mule, Negroni, etc.)
 ├── 04_COMBOS_Y_PROMOCIONES/           <- Botellas + Bebidas / Red Bull / Monster
-└── 05_CIGARROS/                       <- Variedades Lucky Strike
+├── 05_CIGARROS/                       <- Variedades Lucky Strike
+└── 06_CATALOGOS_LOCALES_Y_EVENTOS/    <- Carpetas de catálogos específicos por club / evento
+    ├── BOHEMIAN_CATALOGO/             <- Botellas, promos, sin alcohol (71 archivos)
+    ├── DOPAMINE_CATALOGO/             <- Botellas, individuales, combos (+ .rar)
+    ├── FURIA_CATALOGO/                <- VIP, cocktails, espumantes, botellas (189 archivos)
+    └── VIRAL_HIPODROMO/               <- Vasos, botellas, HTML interactivo y CSV (54 archivos)
 ```
 
 ---
@@ -80,4 +85,29 @@ antigravity/
 | 00 | `00_Carta_Tragos_Completa_Original.jpg` | CARTA TRAGOS COMPLETA | - |
 
 ---
-*Organizado por Antigravity*
+---
+
+## 📥 Cómo descargar todo en tu Laptop
+
+Estando en tu laptop puedes descargar todo el repositorio completo de 3 formas:
+
+### 1. Clonar con Git (Recomendado)
+`ash
+git clone https://github.com/MajajiCL/wowpos-carta-tragos.git
+`
+
+### 2. Clonar con GitHub CLI (gh)
+`ash
+gh repo clone MajajiCL/wowpos-carta-tragos
+`
+
+### 3. Descargar directamente el archivo ZIP
+Puedes entrar en tu navegador a:
+[https://github.com/MajajiCL/wowpos-carta-tragos/archive/refs/heads/main.zip](https://github.com/MajajiCL/wowpos-carta-tragos/archive/refs/heads/main.zip)
+o descargarlo desde la terminal:
+`ash
+curl -L -O https://github.com/MajajiCL/wowpos-carta-tragos/archive/refs/heads/main.zip
+`
+
+---
+*Organizado y respaldado por Antigravity para WOWPOS.CL*
