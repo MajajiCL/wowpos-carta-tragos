@@ -1,0 +1,17 @@
+﻿id,categoria,nombre,precio,formato,foto,detalle
+MINI-COP-01,COPAS Y VASOS,Drop Water,4000,Botella individual,01_COPAS_Y_VASOS/01_Drop_Water_$4000.jpg,Agua purificada en botella 500cc
+MINI-COP-02,COPAS Y VASOS,Redbull (Original - Yellow),4000,Lata 250cc,01_COPAS_Y_VASOS/02_Redbull_Original_Yellow_$4000.jpg,Bebida energética Red Bull Original o Yellow Tropical Edition
+MINI-COP-03,COPAS Y VASOS,Gaseosa Lata,4000,Lata 350cc,01_COPAS_Y_VASOS/03_Gaseosa_Lata_$4000.jpg,"Coca-Cola, Sprite, Fanta, Bilz, Pap"
+MINI-COP-04,COPAS Y VASOS,Mistral 35,6000,Vaso preparado,01_COPAS_Y_VASOS/04_Mistral_35_$6000.jpg,Pisco Mistral 35° con hielo y bebida a elección
+MINI-COP-05,COPAS Y VASOS,Mistral Nobel,8000,Vaso preparado,01_COPAS_Y_VASOS/05_Mistral_Nobel_$8000.jpg,Pisco Mistral Nobel Añejado con hielo y bebida
+MINI-COP-06,COPAS Y VASOS,Gin Kantal,8000,Copa balón,01_COPAS_Y_VASOS/06_Gin_Kantal_$8000.jpg,"Gin Kantal chileno con tónica, botánicos y rodaja cítrica"
+MINI-COP-07,COPAS Y VASOS,Johnnie Walker Red,8000,Vaso preparado,01_COPAS_Y_VASOS/07_Johnnie_Walker_Red_$8000.jpg,Whisky Johnnie Walker Red Label con hielo y bebida
+MINI-COP-08,COPAS Y VASOS,Johnnie Walker Black,10000,Vaso preparado,01_COPAS_Y_VASOS/08_Johnnie_Walker_Black_$10000.jpg,Whisky Johnnie Walker Black Label 12 años en las rocas o con bebida
+MINI-COP-09,COPAS Y VASOS,Jack D (Nro 7 - Apple - Honey - Berries),10000,Vaso preparado,01_COPAS_Y_VASOS/09_Jack_Daniels_Variedades_$10000.webp,Tennessee Whiskey Jack Daniel's Old No. 7 o variedades
+MINI-BOT-01,BOTELLAS,Bot Riccadonna,40000,Botella 750cc,02_BOTELLAS/01_Bot_Riccadonna_$40000.png,Espumante italiano Riccadonna Asti / Brut
+MINI-BOT-02,BOTELLAS,Mistral 35,60000,Botella 750cc + 6 Gaseosas,02_BOTELLAS/02_Bot_Mistral_35_$60000.png,Incluye servicio de 6 latas de gaseosa y balde con hielo
+MINI-BOT-03,BOTELLAS,Mistral Nobel,70000,Botella 750cc + 6 Gaseosas,02_BOTELLAS/03_Bot_Mistral_Nobel_$70000.png,Incluye servicio de 6 latas de gaseosa y balde con hielo
+MINI-BOT-04,BOTELLAS,Bot Gin (Gin Kantal),80000,Botella 750cc + 6 Gaseosas,02_BOTELLAS/04_Bot_Gin_Kantal_$80000.png,Botella Gin Kantal 750cc + 6 latas tónica/gaseosa y hielo
+MINI-BOT-05,BOTELLAS,Bot Johnnie Walker Black,120000,Botella 750cc + 6 Gaseosas,02_BOTELLAS/05_Bot_Johnnie_Walker_Black_$120000.png,JW Black Label 12 años + 6 latas de gaseosa y hielo
+MINI-BOT-06,BOTELLAS,Bot Jack D (Nro 7 - Apple - Honey - Berries),120000,Botella 750cc + 6 Gaseosas,02_BOTELLAS/06_Bot_Jack_Daniels_Variedades_$120000.png,Jack Daniel's a elección + 6 latas de gaseosa y hielo
+MINI-BOT-07,BOTELLAS,Bot Don Julio Blanco,120000,Botella 750cc,02_BOTELLAS/07_Bot_Don_Julio_Blanco_$120000.png,Tequila Ultra Premium Don Julio Blanco 750cc

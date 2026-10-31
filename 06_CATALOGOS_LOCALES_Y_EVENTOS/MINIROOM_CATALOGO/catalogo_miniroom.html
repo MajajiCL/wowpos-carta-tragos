@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINIROOM • Catálogo Oficial de Tragos & Botellas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --gold-light: #f7e7a9;
+            --gold-glow: rgba(212, 175, 55, 0.4);
+            --bg: #09090b;
+            --bg-card: rgba(255, 255, 255, 0.04);
+            --bg-card-hover: rgba(255, 255, 255, 0.08);
+            --border: rgba(212, 175, 55, 0.25);
+            --border-hover: rgba(212, 175, 55, 0.6);
+            --text: #ffffff;
+            --text-muted: #a1a1aa;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg);
+            background-image: 
+                radial-gradient(1200px 600px at 50% -10%, rgba(212, 175, 55, 0.15), transparent 60%),
+                radial-gradient(800px 500px at 90% 90%, rgba(212, 175, 55, 0.08), transparent 50%);
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            min-height: 100vh;
+            padding-bottom: 60px;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            background: rgba(9, 9, 11, 0.85);
+            backdrop-filter: blur(16px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 16px 28px;
+        }
+        .header-inner {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .brand-badge {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            border: 2px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cinzel', serif;
+            font-weight: 900;
+            color: var(--gold);
+            font-size: 20px;
+            background: rgba(212, 175, 55, 0.1);
+            box-shadow: 0 0 15px var(--gold-glow);
+        }
+        .brand-text h1 {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 3px;
+            font-size: 24px;
+            color: #fff;
+        }
+        .brand-text p {
+            font-size: 11px;
+            color: var(--gold-light);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        .search-box {
+            position: relative;
+            flex: 1;
+            max-width: 400px;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 10px 16px;
+            padding-left: 38px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            outline: none;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .search-box input:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 12px var(--gold-glow);
+        }
+        .search-box svg {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            stroke: var(--gold);
+        }
+        .notice-banner {
+            max-width: 1300px;
+            margin: 24px auto 0;
+            padding: 14px 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: rgba(212, 175, 55, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 13.5px;
+            color: var(--gold-light);
+        }
+        .tabs {
+            max-width: 1300px;
+            margin: 24px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            padding: 8px 18px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .tab-btn.active, .tab-btn:hover {
+            background: var(--gold);
+            color: #000;
+            border-color: var(--gold);
+            box-shadow: 0 0 16px var(--gold-glow);
+        }
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+            color: var(--gold);
+            margin: 28px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: 1px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--gold);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.6), 0 0 20px var(--gold-glow);
+            background: var(--bg-card-hover);
+        }
+        .card-img-wrapper {
+            width: 100%;
+            height: 220px;
+            background: radial-gradient(circle at center, #1a1a24 0%, #0d0d12 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            position: relative;
+        }
+        .card-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 8px 16px rgba(0,0,0,0.8));
+            transition: transform 0.3s ease;
+        }
+        .card:hover .card-img {
+            transform: scale(1.05);
+        }
+        .card-tag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(0,0,0,0.65);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border);
+            color: var(--gold-light);
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+        .card-content {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .card-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+        .card-desc {
+            font-size: 12.5px;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            flex: 1;
+            line-height: 1.4;
+        }
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding-top: 12px;
+        }
+        .card-price {
+            font-size: 19px;
+            font-weight: 800;
+            color: var(--gold);
+            font-family: 'Cinzel', serif;
+        }
+        .btn-copy {
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid var(--gold);
+            color: var(--gold-light);
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-copy:hover {
+            background: var(--gold);
+            color: #000;
+        }
+        #toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gold);
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 13.5px;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+            display: none;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-badge">MR</div>
+                <div class="brand-text">
+                    <h1>MINIROOM</h1>
+                    <p>Carta Digital & Catálogo POS</p>
+                </div>
+            </div>
+            <div class="search-box">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <input type="text" id="searchInput" placeholder="Buscar producto, trago, botella..." oninput="filterProducts()">
+            </div>
+        </div>
+    </header>
+
+    <div class="notice-banner">
+        <span>🍾</span>
+        <div><strong>Regla de Servicio:</strong> Las Botellas incluyen <strong>6 bebidas en lata</strong> (menos Espumante & Tequila).</div>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="setCategory('ALL')">Todos (16)</button>
+        <button class="tab-btn" onclick="setCategory('COPAS Y VASOS')">Copas y Vasos (9)</button>
+        <button class="tab-btn" onclick="setCategory('BOTELLAS')">Botellas (7)</button>
+    </div>
+
+    <div class="container" id="productsContainer">
+        <!-- Rendered by JS -->
+    </div>
+
+    <div id="toast">¡Ruta de foto copiada para WOWPOS!</div>
+
+    <script>
+        const products = [{'id': 'MINI-COP-01', 'categoria': 'COPAS Y VASOS', 'nombre': 'Drop Water', 'precio': 4000, 'formato': 'Botella individual', 'foto': '01_COPAS_Y_VASOS/01_Drop_Water_$4000.jpg', 'detalle': 'Agua purificada en botella 500cc'}, {'id': 'MINI-COP-02', 'categoria': 'COPAS Y VASOS', 'nombre': 'Redbull (Original - Yellow)', 'precio': 4000, 'formato': 'Lata 250cc', 'foto': '01_COPAS_Y_VASOS/02_Redbull_Original_Yellow_$4000.jpg', 'detalle': 'Bebida energética Red Bull Original o Yellow Tropical Edition'}, {'id': 'MINI-COP-03', 'categoria': 'COPAS Y VASOS', 'nombre': 'Gaseosa Lata', 'precio': 4000, 'formato': 'Lata 350cc', 'foto': '01_COPAS_Y_VASOS/03_Gaseosa_Lata_$4000.jpg', 'detalle': 'Coca-Cola, Sprite, Fanta, Bilz, Pap'}, {'id': 'MINI-COP-04', 'categoria': 'COPAS Y VASOS', 'nombre': 'Mistral 35', 'precio': 6000, 'formato': 'Vaso preparado', 'foto': '01_COPAS_Y_VASOS/04_Mistral_35_$6000.jpg', 'detalle': 'Pisco Mistral 35° con hielo y bebida a elección'}, {'id': 'MINI-COP-05', 'categoria': 'COPAS Y VASOS', 'nombre': 'Mistral Nobel', 'precio': 8000, 'formato': 'Vaso preparado', 'foto': '01_COPAS_Y_VASOS/05_Mistral_Nobel_$8000.jpg', 'detalle': 'Pisco Mistral Nobel Añejado con hielo y bebida'}, {'id': 'MINI-COP-06', 'categoria': 'COPAS Y VASOS', 'nombre': 'Gin Kantal', 'precio': 8000, 'formato': 'Copa balón', 'foto': '01_COPAS_Y_VASOS/06_Gin_Kantal_$8000.jpg', 'detalle': 'Gin Kantal chileno con tónica, botánicos y rodaja cítrica'}, {'id': 'MINI-COP-07', 'categoria': 'COPAS Y VASOS', 'nombre': 'Johnnie Walker Red', 'precio': 8000, 'formato': 'Vaso preparado', 'foto': '01_COPAS_Y_VASOS/07_Johnnie_Walker_Red_$8000.jpg', 'detalle': 'Whisky Johnnie Walker Red Label con hielo y bebida'}, {'id': 'MINI-COP-08', 'categoria': 'COPAS Y VASOS', 'nombre': 'Johnnie Walker Black', 'precio': 10000, 'formato': 'Vaso preparado', 'foto': '01_COPAS_Y_VASOS/08_Johnnie_Walker_Black_$10000.jpg', 'detalle': 'Whisky Johnnie Walker Black Label 12 años en las rocas o con bebida'}, {'id': 'MINI-COP-09', 'categoria': 'COPAS Y VASOS', 'nombre': 'Jack D (Nro 7 - Apple - Honey - Berries)', 'precio': 10000, 'formato': 'Vaso preparado', 'foto': '01_COPAS_Y_VASOS/09_Jack_Daniels_Variedades_$10000.webp', 'detalle': "Tennessee Whiskey Jack Daniel's Old No. 7 o variedades"}, {'id': 'MINI-BOT-01', 'categoria': 'BOTELLAS', 'nombre': 'Bot Riccadonna', 'precio': 40000, 'formato': 'Botella 750cc', 'foto': '02_BOTELLAS/01_Bot_Riccadonna_$40000.png', 'detalle': 'Espumante italiano Riccadonna Asti / Brut'}, {'id': 'MINI-BOT-02', 'categoria': 'BOTELLAS', 'nombre': 'Mistral 35', 'precio': 60000, 'formato': 'Botella 750cc + 6 Gaseosas', 'foto': '02_BOTELLAS/02_Bot_Mistral_35_$60000.png', 'detalle': 'Incluye servicio de 6 latas de gaseosa y balde con hielo'}, {'id': 'MINI-BOT-03', 'categoria': 'BOTELLAS', 'nombre': 'Mistral Nobel', 'precio': 70000, 'formato': 'Botella 750cc + 6 Gaseosas', 'foto': '02_BOTELLAS/03_Bot_Mistral_Nobel_$70000.png', 'detalle': 'Incluye servicio de 6 latas de gaseosa y balde con hielo'}, {'id': 'MINI-BOT-04', 'categoria': 'BOTELLAS', 'nombre': 'Bot Gin (Gin Kantal)', 'precio': 80000, 'formato': 'Botella 750cc + 6 Gaseosas', 'foto': '02_BOTELLAS/04_Bot_Gin_Kantal_$80000.png', 'detalle': 'Botella Gin Kantal 750cc + 6 latas tónica/gaseosa y hielo'}, {'id': 'MINI-BOT-05', 'categoria': 'BOTELLAS', 'nombre': 'Bot Johnnie Walker Black', 'precio': 120000, 'formato': 'Botella 750cc + 6 Gaseosas', 'foto': '02_BOTELLAS/05_Bot_Johnnie_Walker_Black_$120000.png', 'detalle': 'JW Black Label 12 años + 6 latas de gaseosa y hielo'}, {'id': 'MINI-BOT-06', 'categoria': 'BOTELLAS', 'nombre': 'Bot Jack D (Nro 7 - Apple - Honey - Berries)', 'precio': 120000, 'formato': 'Botella 750cc + 6 Gaseosas', 'foto': '02_BOTELLAS/06_Bot_Jack_Daniels_Variedades_$120000.png', 'detalle': "Jack Daniel's a elección + 6 latas de gaseosa y hielo"}, {'id': 'MINI-BOT-07', 'categoria': 'BOTELLAS', 'nombre': 'Bot Don Julio Blanco', 'precio': 120000, 'formato': 'Botella 750cc', 'foto': '02_BOTELLAS/07_Bot_Don_Julio_Blanco_$120000.png', 'detalle': 'Tequila Ultra Premium Don Julio Blanco 750cc'}];
+
+        let currentCat = 'ALL';
+        let searchQuery = '';
+
+        function render() {
+            const container = document.getElementById('productsContainer');
+            const filtered = products.filter(p => {
+                const matchCat = (currentCat === 'ALL') || (p.categoria === currentCat);
+                const matchSearch = p.nombre.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                                    p.detalle.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchCat && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<p style="text-align:center; padding: 40px; color: #888;">No se encontraron productos.</p>';
+                return;
+            }
+
+            // Group by category if ALL
+            const categories = currentCat === 'ALL' ? ['COPAS Y VASOS', 'BOTELLAS'] : [currentCat];
+            let html = '';
+
+            categories.forEach(cat => {
+                const items = filtered.filter(p => p.categoria === cat);
+                if (items.length > 0) {
+                    html += `<h2 class="section-title"><span>✦</span> ${cat} (${items.length})</h2><div class="grid">`;
+                    items.forEach(item => {
+                        html += `
+                        <div class="card" onclick="copyPath('${item.foto}')">
+                            <div class="card-img-wrapper">
+                                <span class="card-tag">${item.formato}</span>
+                                <img src="${item.foto}" alt="${item.nombre}" class="card-img" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-name">${item.nombre}</div>
+                                <div class="card-desc">${item.detalle}</div>
+                                <div class="card-footer">
+                                    <div class="card-price">$${item.precio.toLocaleString('es-CL')}</div>
+                                    <button class="btn-copy">Copiar Ruta</button>
+                                </div>
+                            </div>
+                        </div>`;
+                    });
+                    html += `</div>`;
+                }
+            });
+
+            container.innerHTML = html;
+        }
+
+        function setCategory(cat) {
+            currentCat = cat;
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.includes(cat === 'ALL' ? 'Todos' : (cat === 'BOTELLAS' ? 'Botellas' : 'Copas')));
+            });
+            render();
+        }
+
+        function filterProducts() {
+            searchQuery = document.getElementById('searchInput').value;
+            render();
+        }
+
+        function copyPath(path) {
+            navigator.clipboard.writeText(path).then(() => {
+                const toast = document.getElementById('toast');
+                toast.style.display = 'block';
+                setTimeout(() => { toast.style.display = 'none'; }, 2200);
+            });
+        }
+
+        render();
+    </script>
+</body>
+</html>
