@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Oficial • WOWPOS</title>
+    <title>Catálogo Oficial WOWPOS • Individuales & Botellas</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
             --pink: #e8217c;
-            --pink-glow: rgba(232, 33, 124, 0.4);
+            --pink-glow: rgba(232, 33, 124, 0.45);
             --bg: #090a10;
             --card: rgba(255, 255, 255, 0.05);
             --border: rgba(255, 255, 255, 0.1);
@@ -19,7 +19,7 @@
         body { background: var(--bg); color: var(--text); padding-bottom: 60px; }
         header {
             position: sticky; top: 0; z-index: 100;
-            background: rgba(9, 10, 16, 0.9); backdrop-filter: blur(14px);
+            background: rgba(9, 10, 16, 0.92); backdrop-filter: blur(14px);
             border-bottom: 1px solid var(--border);
             padding: 18px 24px;
         }
@@ -37,12 +37,12 @@
         .search-input:focus { border-color: var(--pink); box-shadow: 0 0 12px var(--pink-glow); }
         .tabs { max-width: 1300px; margin: 24px auto; padding: 0 20px; display: flex; gap: 10px; flex-wrap: wrap; }
         .tab-btn {
-            padding: 8px 18px; border-radius: 999px; background: var(--card); border: 1px solid var(--border);
-            color: var(--muted); cursor: pointer; font-size: 13px; font-weight: 700; transition: all 0.2s;
+            padding: 10px 22px; border-radius: 999px; background: var(--card); border: 1px solid var(--border);
+            color: var(--muted); cursor: pointer; font-size: 14px; font-weight: 700; transition: all 0.2s;
         }
         .tab-btn.active, .tab-btn:hover { background: var(--pink); color: #fff; border-color: var(--pink); box-shadow: 0 0 15px var(--pink-glow); }
         .container { max-width: 1300px; margin: 0 auto; padding: 0 20px; }
-        .sec-title { font-family: 'Montserrat', sans-serif; font-size: 20px; color: #fff; margin: 30px 0 16px; display: flex; align-items: center; gap: 10px; }
+        .sec-title { font-family: 'Montserrat', sans-serif; font-size: 21px; color: #fff; margin: 34px 0 18px; display: flex; align-items: center; gap: 10px; }
         .sec-title span { color: var(--pink); }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
         .card {
@@ -57,7 +57,7 @@
         .card-body { padding: 16px; display: flex; flex-direction: column; flex: 1; }
         .card-name { font-weight: 700; font-size: 15.5px; margin-bottom: 8px; }
         .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.06); }
-        .card-price { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 900; color: var(--pink); }
+        .card-price { font-family: 'Montserrat', sans-serif; font-size: 19px; font-weight: 900; color: var(--pink); }
         .btn-copy { padding: 6px 12px; border-radius: 6px; background: rgba(232, 33, 124, 0.15); border: 1px solid var(--pink); color: #fff; font-size: 11.5px; font-weight: 700; cursor: pointer; }
         .btn-copy:hover { background: var(--pink); }
         #toast {
@@ -72,25 +72,23 @@
         <div class="header-wrap">
             <div class="brand">
                 <h1>WOWPOS • <span>Catálogo JPG</span></h1>
-                <p>Fotos 100% en formato JPG listas para subir al POS</p>
+                <p>1. Individuales (22) • 2. Botellas (10)</p>
             </div>
-            <input type="text" id="search" class="search-input" placeholder="Buscar producto, trago, botella..." oninput="filter()">
+            <input type="text" id="search" class="search-input" placeholder="Buscar por producto..." oninput="filter()">
         </div>
     </header>
 
     <div class="tabs">
         <button class="tab-btn active" onclick="setCat('ALL')">Todos (32)</button>
-        <button class="tab-btn" onclick="setCat('VASOS Y TRAGOS')">Vasos y Tragos</button>
-        <button class="tab-btn" onclick="setCat('BOTELLAS')">Botellas</button>
-        <button class="tab-btn" onclick="setCat('PROMOCIONES 2X')">Promociones 2X</button>
-        <button class="tab-btn" onclick="setCat('BEBIDAS Y OTROS')">Bebidas y Otros</button>
+        <button class="tab-btn" onclick="setCat('INDIVIDUALES')">1. Individuales (22)</button>
+        <button class="tab-btn" onclick="setCat('BOTELLAS')">2. Botellas (10)</button>
     </div>
 
     <div class="container" id="cardsBox"></div>
     <div id="toast">¡Ruta de foto copiada al portapapeles!</div>
 
     <script>
-        const items = [{'id': 'VAS-01', 'categoria': 'VASOS Y TRAGOS', 'item': 'Alto 35° (Vaso)', 'precio': 7000, 'foto': '01_VASOS_Y_TRAGOS/01_Alto_del_Carmen_35_Vaso_$7000.jpg'}, {'id': 'PRO-01', 'categoria': 'PROMOCIONES 2X', 'item': '2x Alto 35°', 'precio': 13000, 'foto': '03_COMBOS_Y_PROMOS_2X/01_Promo_2x_Alto_35_$13000.jpg'}, {'id': 'BOT-01', 'categoria': 'BOTELLAS', 'item': 'Alto 35° (Botella)', 'precio': 70000, 'foto': '02_BOTELLAS/01_Bot_Alto_del_Carmen_35_$70000.jpg'}, {'id': 'VAS-02', 'categoria': 'VASOS Y TRAGOS', 'item': 'Vodka Smirnoff (Vaso)', 'precio': 8000, 'foto': '01_VASOS_Y_TRAGOS/02_Vodka_Smirnoff_Vaso_$8000.jpg'}, {'id': 'BOT-02', 'categoria': 'BOTELLAS', 'item': 'Vodka Smirnoff (Botella)', 'precio': 80000, 'foto': '02_BOTELLAS/02_Bot_Vodka_Smirnoff_$80000.jpg'}, {'id': 'BOT-03', 'categoria': 'BOTELLAS', 'item': 'Vodka Grey Goose (Botella)', 'precio': 130000, 'foto': '02_BOTELLAS/03_Bot_Vodka_Grey_Goose_$130000.jpg'}, {'id': 'VAS-03', 'categoria': 'VASOS Y TRAGOS', 'item': 'Gin Tanqueray (Copa)', 'precio': 9000, 'foto': '01_VASOS_Y_TRAGOS/03_Gin_Tanqueray_Copa_$9000.jpg'}, {'id': 'BOT-04', 'categoria': 'BOTELLAS', 'item': 'Gin Tanqueray (Botella)', 'precio': 90000, 'foto': '02_BOTELLAS/04_Bot_Gin_Tanqueray_$90000.jpg'}, {'id': 'VAS-04', 'categoria': 'VASOS Y TRAGOS', 'item': 'Tropical Monster', 'precio': 10000, 'foto': '01_VASOS_Y_TRAGOS/04_Tropical_Monster_Copa_$10000.jpg'}, {'id': 'PRO-02', 'categoria': 'PROMOCIONES 2X', 'item': '2x Tropical Monster', 'precio': 18000, 'foto': '03_COMBOS_Y_PROMOS_2X/02_Promo_2x_Tropical_Monster_$18000.jpg'}, {'id': 'VAS-05', 'categoria': 'VASOS Y TRAGOS', 'item': 'Johnnie Walker Red (Vaso)', 'precio': 8000, 'foto': '01_VASOS_Y_TRAGOS/05_Johnnie_Walker_Red_Vaso_$8000.jpg'}, {'id': 'PRO-03', 'categoria': 'PROMOCIONES 2X', 'item': '2x Johnnie Walker Red', 'precio': 14000, 'foto': '03_COMBOS_Y_PROMOS_2X/03_Promo_2x_Johnnie_Walker_Red_$14000.jpg'}, {'id': 'BOT-05', 'categoria': 'BOTELLAS', 'item': 'Johnnie Walker Red (Botella)', 'precio': 80000, 'foto': '02_BOTELLAS/05_Bot_Johnnie_Walker_Red_$80000.jpg'}, {'id': 'VAS-06', 'categoria': 'VASOS Y TRAGOS', 'item': 'Johnnie Walker Black (Vaso)', 'precio': 10000, 'foto': '01_VASOS_Y_TRAGOS/06_Johnnie_Walker_Black_Vaso_$10000.jpg'}, {'id': 'BOT-06', 'categoria': 'BOTELLAS', 'item': 'Johnnie Walker Black (Botella)', 'precio': 120000, 'foto': '02_BOTELLAS/06_Bot_Johnnie_Walker_Black_$120000.jpg'}, {'id': 'VAS-07', 'categoria': 'VASOS Y TRAGOS', 'item': 'Fernet Branca (Vaso)', 'precio': 8000, 'foto': '01_VASOS_Y_TRAGOS/07_Fernet_Branca_Vaso_$8000.jpg'}, {'id': 'BOT-07', 'categoria': 'BOTELLAS', 'item': 'Fernet Branca (Botella)', 'precio': 80000, 'foto': '02_BOTELLAS/07_Bot_Fernet_Branca_$80000.jpg'}, {'id': 'VAS-08', 'categoria': 'VASOS Y TRAGOS', 'item': 'Shot Jagermeister', 'precio': 6000, 'foto': '01_VASOS_Y_TRAGOS/08_Shot_Jagermeister_$6000.jpg'}, {'id': 'VAS-09', 'categoria': 'VASOS Y TRAGOS', 'item': 'Jagermeister (Vaso)', 'precio': 8000, 'foto': '01_VASOS_Y_TRAGOS/09_Jagermeister_Vaso_$8000.jpg'}, {'id': 'BOT-08', 'categoria': 'BOTELLAS', 'item': 'Jagermeister (Botella)', 'precio': 80000, 'foto': '02_BOTELLAS/08_Bot_Jagermeister_$80000.jpg'}, {'id': 'VAS-10', 'categoria': 'VASOS Y TRAGOS', 'item': 'Ramazzotti (Copa)', 'precio': 8000, 'foto': '01_VASOS_Y_TRAGOS/10_Ramazzotti_Copa_$8000.jpg'}, {'id': 'VAS-11', 'categoria': 'VASOS Y TRAGOS', 'item': 'Shot Don Julio Blanco', 'precio': 10000, 'foto': '01_VASOS_Y_TRAGOS/11_Shot_Don_Julio_Blanco_$10000.jpg'}, {'id': 'PRO-04', 'categoria': 'PROMOCIONES 2X', 'item': '2x Shot Don Julio Blanco', 'precio': 18000, 'foto': '03_COMBOS_Y_PROMOS_2X/04_Promo_2x_Shot_Don_Julio_Blanco_$18000.jpg'}, {'id': 'BOT-09', 'categoria': 'BOTELLAS', 'item': 'Don Julio 70 (Botella)', 'precio': 250000, 'foto': '02_BOTELLAS/09_Bot_Don_Julio_70_$250000.jpg'}, {'id': 'BOT-10', 'categoria': 'BOTELLAS', 'item': 'Moët & Chandon Brut Imperial', 'precio': 250000, 'foto': '02_BOTELLAS/10_Bot_Moet_Chandon_Brut_Imperial_$250000.jpg'}, {'id': 'OTR-01', 'categoria': 'BEBIDAS Y OTROS', 'item': 'Cerveza Heineken', 'precio': 4000, 'foto': '04_BEBIDAS_Y_OTROS/01_Cerveza_Heineken_$4000.jpg'}, {'id': 'PRO-05', 'categoria': 'PROMOCIONES 2X', 'item': '2x Cerveza Heineken', 'precio': 6000, 'foto': '03_COMBOS_Y_PROMOS_2X/05_Promo_2x_Cerveza_Heineken_$6000.jpg'}, {'id': 'OTR-02', 'categoria': 'BEBIDAS Y OTROS', 'item': 'Agua Mineral', 'precio': 4000, 'foto': '04_BEBIDAS_Y_OTROS/02_Agua_$4000.jpg'}, {'id': 'OTR-03', 'categoria': 'BEBIDAS Y OTROS', 'item': 'Monster Energy', 'precio': 5000, 'foto': '04_BEBIDAS_Y_OTROS/03_Monster_Energy_$5000.jpg'}, {'id': 'VAS-12', 'categoria': 'VASOS Y TRAGOS', 'item': 'Bebida (vaso)', 'precio': 3000, 'foto': '01_VASOS_Y_TRAGOS/12_Bebida_Vaso_$3000.jpg'}, {'id': 'OTR-04', 'categoria': 'BEBIDAS Y OTROS', 'item': 'Bebida (lata)', 'precio': 3000, 'foto': '04_BEBIDAS_Y_OTROS/04_Bebida_Lata_$3000.jpg'}, {'id': 'OTR-05', 'categoria': 'BEBIDAS Y OTROS', 'item': 'Vaso reutilizable', 'precio': 1000, 'foto': '04_BEBIDAS_Y_OTROS/05_Vaso_Reutilizable_$1000.jpg'}];
+        const items = [{'id': 'PRD-01', 'categoria': 'INDIVIDUALES', 'item': 'Alto 35° (Vaso)', 'precio': 7000, 'foto': '01_INDIVIDUALES/01_Alto_35_Vaso_$7000.jpg'}, {'id': 'PRD-02', 'categoria': 'INDIVIDUALES', 'item': '2x Alto 35°', 'precio': 13000, 'foto': '01_INDIVIDUALES/02_2x_Alto_35_$13000.jpg'}, {'id': 'PRD-03', 'categoria': 'INDIVIDUALES', 'item': 'Vodka Smirnoff (Vaso)', 'precio': 8000, 'foto': '01_INDIVIDUALES/03_Vodka_Smirnoff_Vaso_$8000.jpg'}, {'id': 'PRD-04', 'categoria': 'INDIVIDUALES', 'item': 'Gin Tanqueray (Copa)', 'precio': 9000, 'foto': '01_INDIVIDUALES/04_Gin_Tanqueray_Copa_$9000.jpg'}, {'id': 'PRD-05', 'categoria': 'INDIVIDUALES', 'item': 'Tropical Monster', 'precio': 10000, 'foto': '01_INDIVIDUALES/05_Tropical_Monster_$10000.jpg'}, {'id': 'PRD-06', 'categoria': 'INDIVIDUALES', 'item': '2x Tropical Monster', 'precio': 18000, 'foto': '01_INDIVIDUALES/06_2x_Tropical_Monster_$18000.jpg'}, {'id': 'PRD-07', 'categoria': 'INDIVIDUALES', 'item': 'Johnnie Walker Red (Vaso)', 'precio': 8000, 'foto': '01_INDIVIDUALES/07_Johnnie_Walker_Red_Vaso_$8000.jpg'}, {'id': 'PRD-08', 'categoria': 'INDIVIDUALES', 'item': '2x Johnnie Walker Red', 'precio': 14000, 'foto': '01_INDIVIDUALES/08_2x_Johnnie_Walker_Red_$14000.jpg'}, {'id': 'PRD-09', 'categoria': 'INDIVIDUALES', 'item': 'Johnnie Walker Black (Vaso)', 'precio': 10000, 'foto': '01_INDIVIDUALES/09_Johnnie_Walker_Black_Vaso_$10000.jpg'}, {'id': 'PRD-10', 'categoria': 'INDIVIDUALES', 'item': 'Fernet (Vaso)', 'precio': 8000, 'foto': '01_INDIVIDUALES/10_Fernet_Vaso_$8000.jpg'}, {'id': 'PRD-11', 'categoria': 'INDIVIDUALES', 'item': 'Shot Jagermeister', 'precio': 6000, 'foto': '01_INDIVIDUALES/11_Shot_Jagermeister_$6000.jpg'}, {'id': 'PRD-12', 'categoria': 'INDIVIDUALES', 'item': 'Jagermeister (Vaso)', 'precio': 8000, 'foto': '01_INDIVIDUALES/12_Jagermeister_Vaso_$8000.jpg'}, {'id': 'PRD-13', 'categoria': 'INDIVIDUALES', 'item': 'Ramazzotti (Copa)', 'precio': 8000, 'foto': '01_INDIVIDUALES/13_Ramazzotti_Copa_$8000.jpg'}, {'id': 'PRD-14', 'categoria': 'INDIVIDUALES', 'item': 'Shot Don Julio Blanco', 'precio': 10000, 'foto': '01_INDIVIDUALES/14_Shot_Don_Julio_Blanco_$10000.jpg'}, {'id': 'PRD-15', 'categoria': 'INDIVIDUALES', 'item': '2x Shot Don Julio Blanco', 'precio': 18000, 'foto': '01_INDIVIDUALES/15_2x_Shot_Don_Julio_Blanco_$18000.jpg'}, {'id': 'PRD-16', 'categoria': 'INDIVIDUALES', 'item': 'Cerveza Heineken', 'precio': 4000, 'foto': '01_INDIVIDUALES/16_Cerveza_Heineken_$4000.jpg'}, {'id': 'PRD-17', 'categoria': 'INDIVIDUALES', 'item': '2x Cerveza Heineken', 'precio': 6000, 'foto': '01_INDIVIDUALES/17_2x_Cerveza_Heineken_$6000.jpg'}, {'id': 'PRD-18', 'categoria': 'INDIVIDUALES', 'item': 'Agua', 'precio': 4000, 'foto': '01_INDIVIDUALES/18_Agua_$4000.jpg'}, {'id': 'PRD-19', 'categoria': 'INDIVIDUALES', 'item': 'Monster', 'precio': 5000, 'foto': '01_INDIVIDUALES/19_Monster_$5000.jpg'}, {'id': 'PRD-20', 'categoria': 'INDIVIDUALES', 'item': 'Bebida (vaso)', 'precio': 3000, 'foto': '01_INDIVIDUALES/20_Bebida_Vaso_$3000.jpg'}, {'id': 'PRD-21', 'categoria': 'INDIVIDUALES', 'item': 'Bebida (lata)', 'precio': 3000, 'foto': '01_INDIVIDUALES/21_Bebida_Lata_$3000.jpg'}, {'id': 'PRD-22', 'categoria': 'INDIVIDUALES', 'item': 'Vaso reutilizable', 'precio': 1000, 'foto': '01_INDIVIDUALES/22_Vaso_Reutilizable_$1000.jpg'}, {'id': 'PRD-23', 'categoria': 'BOTELLAS', 'item': 'Alto 35° (Botella)', 'precio': 70000, 'foto': '02_BOTELLAS/01_Bot_Alto_35_$70000.jpg'}, {'id': 'PRD-24', 'categoria': 'BOTELLAS', 'item': 'Vodka Smirnoff (Botella)', 'precio': 80000, 'foto': '02_BOTELLAS/02_Bot_Vodka_Smirnoff_$80000.jpg'}, {'id': 'PRD-25', 'categoria': 'BOTELLAS', 'item': 'Vodka Grey Goose (Botella)', 'precio': 130000, 'foto': '02_BOTELLAS/03_Bot_Vodka_Grey_Goose_$130000.jpg'}, {'id': 'PRD-26', 'categoria': 'BOTELLAS', 'item': 'Gin Tanqueray (Botella)', 'precio': 90000, 'foto': '02_BOTELLAS/04_Bot_Gin_Tanqueray_$90000.jpg'}, {'id': 'PRD-27', 'categoria': 'BOTELLAS', 'item': 'Johnnie Walker Red (Botella)', 'precio': 80000, 'foto': '02_BOTELLAS/05_Bot_Johnnie_Walker_Red_$80000.jpg'}, {'id': 'PRD-28', 'categoria': 'BOTELLAS', 'item': 'Johnnie Walker Black (Botella)', 'precio': 120000, 'foto': '02_BOTELLAS/06_Bot_Johnnie_Walker_Black_$120000.jpg'}, {'id': 'PRD-29', 'categoria': 'BOTELLAS', 'item': 'Fernet (Botella)', 'precio': 80000, 'foto': '02_BOTELLAS/07_Bot_Fernet_$80000.jpg'}, {'id': 'PRD-30', 'categoria': 'BOTELLAS', 'item': 'Jagermeister (Botella)', 'precio': 80000, 'foto': '02_BOTELLAS/08_Bot_Jagermeister_$80000.jpg'}, {'id': 'PRD-31', 'categoria': 'BOTELLAS', 'item': 'Don Julio 70 (Botella)', 'precio': 250000, 'foto': '02_BOTELLAS/09_Bot_Don_Julio_70_$250000.jpg'}, {'id': 'PRD-32', 'categoria': 'BOTELLAS', 'item': 'Moët & Chandon Brut Imperial (Botella)', 'precio': 250000, 'foto': '02_BOTELLAS/10_Bot_Moet_Chandon_Brut_Imperial_$250000.jpg'}];
         let curCat = 'ALL';
         let q = '';
 
@@ -102,13 +100,14 @@
                 return catOk && searchOk;
             });
 
-            const cats = curCat === 'ALL' ? ['VASOS Y TRAGOS', 'BOTELLAS', 'PROMOCIONES 2X', 'BEBIDAS Y OTROS'] : [curCat];
+            const cats = curCat === 'ALL' ? ['INDIVIDUALES', 'BOTELLAS'] : [curCat];
             let html = '';
 
             cats.forEach(c => {
                 const sub = filtered.filter(x => x.categoria === c);
                 if (sub.length > 0) {
-                    html += `<h2 class="sec-title"><span>✦</span> ${c} (${sub.length})</h2><div class="grid">`;
+                    const titleText = c === 'INDIVIDUALES' ? '1. INDIVIDUALES (Vasos, Shots, Promos 2X, Cervezas, Bebidas)' : '2. BOTELLAS';
+                    html += `<h2 class="sec-title"><span>✦</span> ${titleText} (${sub.length})</h2><div class="grid">`;
                     sub.forEach(it => {
                         html += `
                         <div class="card" onclick="copy('${it.foto}')">
@@ -134,7 +133,7 @@
         function setCat(c) {
             curCat = c;
             document.querySelectorAll('.tab-btn').forEach(b => {
-                b.classList.toggle('active', b.textContent.includes(c === 'ALL' ? 'Todos' : c));
+                b.classList.toggle('active', b.textContent.includes(c === 'ALL' ? 'Todos' : (c === 'INDIVIDUALES' ? 'Individuales' : 'Botellas')));
             });
             render();
         }

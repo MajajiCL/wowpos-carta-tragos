@@ -1,33 +1,33 @@
 ﻿id,categoria,item,precio,foto
-VAS-01,VASOS Y TRAGOS,Alto 35° (Vaso),7000,01_VASOS_Y_TRAGOS/01_Alto_del_Carmen_35_Vaso_$7000.jpg
-PRO-01,PROMOCIONES 2X,2x Alto 35°,13000,03_COMBOS_Y_PROMOS_2X/01_Promo_2x_Alto_35_$13000.jpg
-BOT-01,BOTELLAS,Alto 35° (Botella),70000,02_BOTELLAS/01_Bot_Alto_del_Carmen_35_$70000.jpg
-VAS-02,VASOS Y TRAGOS,Vodka Smirnoff (Vaso),8000,01_VASOS_Y_TRAGOS/02_Vodka_Smirnoff_Vaso_$8000.jpg
-BOT-02,BOTELLAS,Vodka Smirnoff (Botella),80000,02_BOTELLAS/02_Bot_Vodka_Smirnoff_$80000.jpg
-BOT-03,BOTELLAS,Vodka Grey Goose (Botella),130000,02_BOTELLAS/03_Bot_Vodka_Grey_Goose_$130000.jpg
-VAS-03,VASOS Y TRAGOS,Gin Tanqueray (Copa),9000,01_VASOS_Y_TRAGOS/03_Gin_Tanqueray_Copa_$9000.jpg
-BOT-04,BOTELLAS,Gin Tanqueray (Botella),90000,02_BOTELLAS/04_Bot_Gin_Tanqueray_$90000.jpg
-VAS-04,VASOS Y TRAGOS,Tropical Monster,10000,01_VASOS_Y_TRAGOS/04_Tropical_Monster_Copa_$10000.jpg
-PRO-02,PROMOCIONES 2X,2x Tropical Monster,18000,03_COMBOS_Y_PROMOS_2X/02_Promo_2x_Tropical_Monster_$18000.jpg
-VAS-05,VASOS Y TRAGOS,Johnnie Walker Red (Vaso),8000,01_VASOS_Y_TRAGOS/05_Johnnie_Walker_Red_Vaso_$8000.jpg
-PRO-03,PROMOCIONES 2X,2x Johnnie Walker Red,14000,03_COMBOS_Y_PROMOS_2X/03_Promo_2x_Johnnie_Walker_Red_$14000.jpg
-BOT-05,BOTELLAS,Johnnie Walker Red (Botella),80000,02_BOTELLAS/05_Bot_Johnnie_Walker_Red_$80000.jpg
-VAS-06,VASOS Y TRAGOS,Johnnie Walker Black (Vaso),10000,01_VASOS_Y_TRAGOS/06_Johnnie_Walker_Black_Vaso_$10000.jpg
-BOT-06,BOTELLAS,Johnnie Walker Black (Botella),120000,02_BOTELLAS/06_Bot_Johnnie_Walker_Black_$120000.jpg
-VAS-07,VASOS Y TRAGOS,Fernet Branca (Vaso),8000,01_VASOS_Y_TRAGOS/07_Fernet_Branca_Vaso_$8000.jpg
-BOT-07,BOTELLAS,Fernet Branca (Botella),80000,02_BOTELLAS/07_Bot_Fernet_Branca_$80000.jpg
-VAS-08,VASOS Y TRAGOS,Shot Jagermeister,6000,01_VASOS_Y_TRAGOS/08_Shot_Jagermeister_$6000.jpg
-VAS-09,VASOS Y TRAGOS,Jagermeister (Vaso),8000,01_VASOS_Y_TRAGOS/09_Jagermeister_Vaso_$8000.jpg
-BOT-08,BOTELLAS,Jagermeister (Botella),80000,02_BOTELLAS/08_Bot_Jagermeister_$80000.jpg
-VAS-10,VASOS Y TRAGOS,Ramazzotti (Copa),8000,01_VASOS_Y_TRAGOS/10_Ramazzotti_Copa_$8000.jpg
-VAS-11,VASOS Y TRAGOS,Shot Don Julio Blanco,10000,01_VASOS_Y_TRAGOS/11_Shot_Don_Julio_Blanco_$10000.jpg
-PRO-04,PROMOCIONES 2X,2x Shot Don Julio Blanco,18000,03_COMBOS_Y_PROMOS_2X/04_Promo_2x_Shot_Don_Julio_Blanco_$18000.jpg
-BOT-09,BOTELLAS,Don Julio 70 (Botella),250000,02_BOTELLAS/09_Bot_Don_Julio_70_$250000.jpg
-BOT-10,BOTELLAS,Moët & Chandon Brut Imperial,250000,02_BOTELLAS/10_Bot_Moet_Chandon_Brut_Imperial_$250000.jpg
-OTR-01,BEBIDAS Y OTROS,Cerveza Heineken,4000,04_BEBIDAS_Y_OTROS/01_Cerveza_Heineken_$4000.jpg
-PRO-05,PROMOCIONES 2X,2x Cerveza Heineken,6000,03_COMBOS_Y_PROMOS_2X/05_Promo_2x_Cerveza_Heineken_$6000.jpg
-OTR-02,BEBIDAS Y OTROS,Agua Mineral,4000,04_BEBIDAS_Y_OTROS/02_Agua_$4000.jpg
-OTR-03,BEBIDAS Y OTROS,Monster Energy,5000,04_BEBIDAS_Y_OTROS/03_Monster_Energy_$5000.jpg
-VAS-12,VASOS Y TRAGOS,Bebida (vaso),3000,01_VASOS_Y_TRAGOS/12_Bebida_Vaso_$3000.jpg
-OTR-04,BEBIDAS Y OTROS,Bebida (lata),3000,04_BEBIDAS_Y_OTROS/04_Bebida_Lata_$3000.jpg
-OTR-05,BEBIDAS Y OTROS,Vaso reutilizable,1000,04_BEBIDAS_Y_OTROS/05_Vaso_Reutilizable_$1000.jpg
+PRD-01,INDIVIDUALES,Alto 35° (Vaso),7000,01_INDIVIDUALES/01_Alto_35_Vaso_$7000.jpg
+PRD-02,INDIVIDUALES,2x Alto 35°,13000,01_INDIVIDUALES/02_2x_Alto_35_$13000.jpg
+PRD-03,INDIVIDUALES,Vodka Smirnoff (Vaso),8000,01_INDIVIDUALES/03_Vodka_Smirnoff_Vaso_$8000.jpg
+PRD-04,INDIVIDUALES,Gin Tanqueray (Copa),9000,01_INDIVIDUALES/04_Gin_Tanqueray_Copa_$9000.jpg
+PRD-05,INDIVIDUALES,Tropical Monster,10000,01_INDIVIDUALES/05_Tropical_Monster_$10000.jpg
+PRD-06,INDIVIDUALES,2x Tropical Monster,18000,01_INDIVIDUALES/06_2x_Tropical_Monster_$18000.jpg
+PRD-07,INDIVIDUALES,Johnnie Walker Red (Vaso),8000,01_INDIVIDUALES/07_Johnnie_Walker_Red_Vaso_$8000.jpg
+PRD-08,INDIVIDUALES,2x Johnnie Walker Red,14000,01_INDIVIDUALES/08_2x_Johnnie_Walker_Red_$14000.jpg
+PRD-09,INDIVIDUALES,Johnnie Walker Black (Vaso),10000,01_INDIVIDUALES/09_Johnnie_Walker_Black_Vaso_$10000.jpg
+PRD-10,INDIVIDUALES,Fernet (Vaso),8000,01_INDIVIDUALES/10_Fernet_Vaso_$8000.jpg
+PRD-11,INDIVIDUALES,Shot Jagermeister,6000,01_INDIVIDUALES/11_Shot_Jagermeister_$6000.jpg
+PRD-12,INDIVIDUALES,Jagermeister (Vaso),8000,01_INDIVIDUALES/12_Jagermeister_Vaso_$8000.jpg
+PRD-13,INDIVIDUALES,Ramazzotti (Copa),8000,01_INDIVIDUALES/13_Ramazzotti_Copa_$8000.jpg
+PRD-14,INDIVIDUALES,Shot Don Julio Blanco,10000,01_INDIVIDUALES/14_Shot_Don_Julio_Blanco_$10000.jpg
+PRD-15,INDIVIDUALES,2x Shot Don Julio Blanco,18000,01_INDIVIDUALES/15_2x_Shot_Don_Julio_Blanco_$18000.jpg
+PRD-16,INDIVIDUALES,Cerveza Heineken,4000,01_INDIVIDUALES/16_Cerveza_Heineken_$4000.jpg
+PRD-17,INDIVIDUALES,2x Cerveza Heineken,6000,01_INDIVIDUALES/17_2x_Cerveza_Heineken_$6000.jpg
+PRD-18,INDIVIDUALES,Agua,4000,01_INDIVIDUALES/18_Agua_$4000.jpg
+PRD-19,INDIVIDUALES,Monster,5000,01_INDIVIDUALES/19_Monster_$5000.jpg
+PRD-20,INDIVIDUALES,Bebida (vaso),3000,01_INDIVIDUALES/20_Bebida_Vaso_$3000.jpg
+PRD-21,INDIVIDUALES,Bebida (lata),3000,01_INDIVIDUALES/21_Bebida_Lata_$3000.jpg
+PRD-22,INDIVIDUALES,Vaso reutilizable,1000,01_INDIVIDUALES/22_Vaso_Reutilizable_$1000.jpg
+PRD-23,BOTELLAS,Alto 35° (Botella),70000,02_BOTELLAS/01_Bot_Alto_35_$70000.jpg
+PRD-24,BOTELLAS,Vodka Smirnoff (Botella),80000,02_BOTELLAS/02_Bot_Vodka_Smirnoff_$80000.jpg
+PRD-25,BOTELLAS,Vodka Grey Goose (Botella),130000,02_BOTELLAS/03_Bot_Vodka_Grey_Goose_$130000.jpg
+PRD-26,BOTELLAS,Gin Tanqueray (Botella),90000,02_BOTELLAS/04_Bot_Gin_Tanqueray_$90000.jpg
+PRD-27,BOTELLAS,Johnnie Walker Red (Botella),80000,02_BOTELLAS/05_Bot_Johnnie_Walker_Red_$80000.jpg
+PRD-28,BOTELLAS,Johnnie Walker Black (Botella),120000,02_BOTELLAS/06_Bot_Johnnie_Walker_Black_$120000.jpg
+PRD-29,BOTELLAS,Fernet (Botella),80000,02_BOTELLAS/07_Bot_Fernet_$80000.jpg
+PRD-30,BOTELLAS,Jagermeister (Botella),80000,02_BOTELLAS/08_Bot_Jagermeister_$80000.jpg
+PRD-31,BOTELLAS,Don Julio 70 (Botella),250000,02_BOTELLAS/09_Bot_Don_Julio_70_$250000.jpg
+PRD-32,BOTELLAS,Moët & Chandon Brut Imperial (Botella),250000,02_BOTELLAS/10_Bot_Moet_Chandon_Brut_Imperial_$250000.jpg
