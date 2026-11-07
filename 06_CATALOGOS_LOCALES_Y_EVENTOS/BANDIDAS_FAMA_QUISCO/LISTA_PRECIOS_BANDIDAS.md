@@ -1,165 +1,93 @@
-# 🍸 BANDIDAS • FAMA QUISCO — Catálogo Oficial WOWPOS
+# 🍸 BANDIDAS • FAMA QUISCO — Catálogo Auditado 100% Oficial
 
-**Organización:** Bandidas  
-**Sucursal:** Fama Quisco  
-**Cuenta WOWPOS:** `Bandidas@wowticket.cl`  
-**Fuente Original:** `https://vesti.cl/store/471478` (Fama Multiespacio)  
-**Total Productos:** 103  
-**NOTA:** Precios formateados en números enteros limpios (SIN puntos ni signo $) listos para copiar y pegar directo a WOWPOS.
+**Organización:** `bandidas`  
+**Sucursal:** `Fama Quisco`  
+**Cuenta WOWPOS:** `Bandidas@wowticket.cl` / `Hola%123-.`  
+**Fuente Auditada (`totem-origin: WEB`):** `https://vesti.cl/store/471478`  
+**Total Categorías:** 7 | **Total Productos:** 55  
+**Formato de Precios:** Enteros puros sin puntos ni signos `$`, listos para copiar y pegar en WOWPOS.
 
 ---
 
+## 📁 JAGER (2 productos)
+| # | Producto | Precio (Sin Puntos) | Descripción en Vesti | Foto JPG |
+|---|---|:---:|---|---|
+| 1 | **3 SHOT JAGERMEISTER X $8.000** | `8000` | 3 shot jager x $8.000 | `01_JAGER/01_3_SHOT_JAGERMEISTER_X_8.000_8000.jpg` |
+| 2 | **MOJITO JAGER** | `8000` | mojito jager | `01_JAGER/02_MOJITO_JAGER_8000.jpg` |
+
 ## 📁 VASOS (19 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **VASO VODKA** | `5000` | `01_VASOS/VASO_VODKA_$5000.jpg` |
-| **APEROL SPRITZ** | `8000` | `01_VASOS/APEROL_SPRITZ_$8000.jpg` |
-| **VASO ALTO DEL CARMEN MANZANA** | `7000` | `01_VASOS/VASO_ALTO_DEL_CARMEN_MANZANA_$7000.jpg` |
-| **PINK PARADISE** | `10000` | `01_VASOS/PINK_PARADISE_$10000.jpg` |
-| **VASO JACK DANIEL’S BLACKBERRY** | `10000` | `01_VASOS/VASO_JACK_DANIELS_BLACKBERRY_$10000.jpg` |
-| **VASO MISTRAL 35°** | `6000` | `01_VASOS/VASO_MISTRAL_35_$6000.jpg` |
-| **VASO WHISKY BALLANTINES** | `7000` | `01_VASOS/VASO_WHISKY_BALLANTINES_$7000.jpg` |
-| **MOJITO SIN ALCOHOL** | `6000` | `01_VASOS/MOJITO_SIN_ALCOHOL_$6000.jpg` |
-| **MOJITO** | `8000` | `01_VASOS/MOJITO_$8000.jpg` |
-| **VASO RON AÑEJO** | `5000` | `01_VASOS/VASO_RON_AÑEJO_$5000.jpg` |
-| **VASO ALTO DEL CARMEN 35°** | `5000` | `01_VASOS/VASO_ALTO_DEL_CARMEN_35_$5000.jpg` |
-| **VASO JOHNNIE WALKER RED LABEL** | `7000` | `01_VASOS/VASO_JOHNNIE_WALKER_RED_LABEL_$7000.jpg` |
-| **VASO JOHNNIE WALKER BLACK LABEL** | `10000` | `01_VASOS/VASO_JOHNNIE_WALKER_BLACK_LABEL_$10000.jpg` |
-| **RAMAZOTTI SPRITZ** | `8000` | `01_VASOS/RAMAZOTTI_SPRITZ_$8000.jpg` |
-| **COPA GIN TONIC O BEBIDA** | `7000` | `01_VASOS/COPA_GIN_TONIC_O_BEBIDA_$7000.jpg` |
-| **TROPICAL GIN** | `9000` | `01_VASOS/TROPICAL_GIN_$9000.jpg` |
-| **VASO JACK DANIEL’S N°7** | `10000` | `01_VASOS/VASO_JACK_DANIELS_N7_$10000.jpg` |
-| **VASO JACK DANIEL’S HONEY** | `10000` | `01_VASOS/VASO_JACK_DANIELS_HONEY_$10000.jpg` |
-| **VASO JACK DANIEL’S MANZANA** | `10000` | `01_VASOS/VASO_JACK_DANIELS_MANZANA_$10000.jpg` |
-
-## 📁 BOTELLAS (13 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **BOTELLA JACK N7 750 ML + BEBIDA 1,5 LTS** | `100000` | `02_BOTELLAS/BOTELLA_JACK_N7_750_ML_BEBIDA_15_LTS_$100000.jpg` |
-| **BOTELLA JACK APPLE 750 ML + BEBIDA 1,5 LTS** | `100000` | `02_BOTELLAS/BOTELLA_JACK_APPLE_750_ML_BEBIDA_15_LTS_$100000.jpg` |
-| **BOTELLA JACK HONEY 750 ML + BEBIDA 1,5 LTS** | `100000` | `02_BOTELLAS/BOTELLA_JACK_HONEY_750_ML_BEBIDA_15_LTS_$100000.jpg` |
-| **BOTELLA ESPUMANTE 750 ML** | `20000` | `02_BOTELLAS/BOTELLA_ESPUMANTE_750_ML_$20000.jpg` |
-| **BOTELLA JOHNNIE BLACK LABEL 750 ML + BEBIDA 1,5 LTS** | `110000` | `02_BOTELLAS/BOTELLA_JOHNNIE_BLACK_LABEL_750_ML_BEBIDA_15_LTS_$110000.jpg` |
-| **BOTELLA JOHNNIE RED LABEL 750 ML + BEBIDA 1,5 LTS** | `75000` | `02_BOTELLAS/BOTELLA_JOHNNIE_RED_LABEL_750_ML_BEBIDA_15_LTS_$75000.jpg` |
-| **BOTELLA GIN GORDON’S 750ml + TÓNICA O BEBIDA 1,5** | `65000` | `02_BOTELLAS/BOTELLA_GIN_GORDONS_750ml_TÓNICA_O_BEBIDA_15_$65000.jpg` |
-| **BOTELLA TEQUILA + 2 AGUAS 500 ML** | `40000` | `02_BOTELLAS/BOTELLA_TEQUILA_2_AGUAS_500_ML_$40000.jpg` |
-| **BOTELLA ALTO DEL CARMEN 35° 750 ML + BEBIDA 1,5 LTS** | `55000` | `02_BOTELLAS/BOTELLA_ALTO_DEL_CARMEN_35_750_ML_BEBIDA_15_LTS_$55000.jpg` |
-| **BOTELLA MISTRAL 35° 750 ML + BEBIDA 1,5 LTS** | `60000` | `02_BOTELLAS/BOTELLA_MISTRAL_35_750_ML_BEBIDA_15_LTS_$60000.jpg` |
-| **BOTELLA JACK DANIEL’S BLACKBERRY + BEBIDA 1,5 LTS** | `100000` | `02_BOTELLAS/BOTELLA_JACK_DANIELS_BLACKBERRY_BEBIDA_15_LTS_$100000.jpg` |
-| **BOTELLA ALTO DEL CARMEN APPLE 750 ML + BEBIDA 1,5 LTS** | `65000` | `02_BOTELLAS/BOTELLA_ALTO_DEL_CARMEN_APPLE_750_ML_BEBIDA_15_LTS_$65000.jpg` |
-| **BOTELLA WHISKY BALLANTINES + BEBIDA 1,5 LTS** | `70000` | `02_BOTELLAS/BOTELLA_WHISKY_BALLANTINES_BEBIDA_15_LTS_$70000.jpg` |
-
-## 📁 PROMOS (3 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **PROMO 3 PISCOLAS ALTO 35° X $10.000** | `10000` | `03_PROMOS_Y_COMBOS/PROMO_3_PISCOLAS_ALTO_35_X_$10.000_$10000.jpg` |
-| **PROMO TROPICAL GIN 2X** | `15000` | `03_PROMOS_Y_COMBOS/PROMO_TROPICAL_GIN_2X_$15000.jpg` |
-| **PROMO 4 CERVEZAS LATA** | `10000` | `03_PROMOS_Y_COMBOS/PROMO_4_CERVEZAS_LATA_$10000.jpg` |
-
-## 📁 COMBOS (7 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **COMBO COMPLETO ITALIANO** | `4990` | `03_PROMOS_Y_COMBOS/COMBO_COMPLETO_ITALIANO_$4990.jpg` |
-| **COMBO COMPLETO ITALIANO XL** | `6490` | `03_PROMOS_Y_COMBOS/COMBO_COMPLETO_ITALIANO_XL_$6490.jpg` |
-| **COMBO ASS ITALIANO XL** | `8490` | `03_PROMOS_Y_COMBOS/COMBO_ASS_ITALIANO_XL_$8490.jpg` |
-| **COMBO ASS BARROS LUCO** | `6990` | `03_PROMOS_Y_COMBOS/COMBO_ASS_BARROS_LUCO_$6990.jpg` |
-| **COMBO ASS BARROS LUCO XL** | `8490` | `03_PROMOS_Y_COMBOS/COMBO_ASS_BARROS_LUCO_XL_$8490.jpg` |
-| **COMBO PIZZETA** | `4990` | `03_PROMOS_Y_COMBOS/COMBO_PIZZETA_$4990.jpg` |
-| **HAZLO COMBO** | `1000` | `03_PROMOS_Y_COMBOS/HAZLO_COMBO_$1000.jpg` |
+| # | Producto | Precio (Sin Puntos) | Descripción en Vesti | Foto JPG |
+|---|---|:---:|---|---|
+| 1 | **VASO VODKA** | `5000` | Vaso vodka smirnoff + bebida a elección | `02_VASOS/01_VASO_VODKA_5000.jpg` |
+| 2 | **APEROL SPRITZ** | `8000` | Aperol + espumante + agua con gas o bebida | `02_VASOS/02_APEROL_SPRITZ_8000.jpg` |
+| 3 | **VASO ALTO DEL CARMEN MANZANA** | `7000` | vaso alto del carmen manzana + bebida a elección | `02_VASOS/03_VASO_ALTO_DEL_CARMEN_MANZANA_7000.jpg` |
+| 4 | **PINK PARADISE** | `10000` | Whisky Jack Daniel’s BlackBerry + Pulpa de frambuesa + Monster Rosada + Sprite | `02_VASOS/04_PINK_PARADISE_10000.jpg` |
+| 5 | **VASO JACK DANIEL’S BLACKBERRY** | `10000` | Vaso Jack Daniel’s blackberry + bebida a elección | `02_VASOS/05_VASO_JACK_DANIELS_BLACKBERRY_10000.jpg` |
+| 6 | **VASO MISTRAL 35°** | `6000` | Vaso pisco Mistral 35° + bebida a elección | `02_VASOS/06_VASO_MISTRAL_35_6000.jpg` |
+| 7 | **VASO WHISKY BALLANTINES** | `7000` | Vaso whisky ballantines + bebida a elección | `02_VASOS/07_VASO_WHISKY_BALLANTINES_7000.jpg` |
+| 8 | **MOJITO SIN ALCOHOL** | `6000` | Mojito sin alcohol elaborado con limón sutil y jugo de limón natural, consulte sabores disponibles en barra | `02_VASOS/08_MOJITO_SIN_ALCOHOL_6000.jpg` |
+| 9 | **MOJITO** | `8000` | Mojito elaborado con limón sutil y jugo de limón natural, consulte sabores disponibles en barra | `02_VASOS/09_MOJITO_8000.jpg` |
+| 10 | **VASO RON AÑEJO** | `5000` | Vaso de ron añejo + bebida a elección | `02_VASOS/10_VASO_RON_AÑEJO_5000.jpg` |
+| 11 | **VASO ALTO DEL CARMEN 35°** | `5000` | Vaso alto del carmen 35° + bebida a elección | `02_VASOS/11_VASO_ALTO_DEL_CARMEN_35_5000.jpg` |
+| 12 | **VASO JOHNNIE WALKER RED LABEL** | `7000` | Vaso Johnnie Walker Red Label + bebida a elección | `02_VASOS/12_VASO_JOHNNIE_WALKER_RED_LABEL_7000.jpg` |
+| 13 | **VASO JOHNNIE WALKER BLACK LABEL** | `10000` | Vaso Johnnie Walker Black Label + bebida a elección | `02_VASOS/13_VASO_JOHNNIE_WALKER_BLACK_LABEL_10000.jpg` |
+| 14 | **RAMAZOTTI SPRITZ** | `8000` | Copa de Ramazotti + agua con gas o bebida a elección | `02_VASOS/14_RAMAZOTTI_SPRITZ_8000.jpg` |
+| 15 | **COPA GIN TONIC O BEBIDA** | `7000` | Copa de gin + tónica o bebida a elección | `02_VASOS/15_COPA_GIN_TONIC_O_BEBIDA_7000.jpg` |
+| 16 | **TROPICAL GIN** | `9000` | Copa de gin santos + pulpa de maracuyá + Monster mango loco | `02_VASOS/16_TROPICAL_GIN_9000.jpg` |
+| 17 | **VASO JACK DANIEL’S N°7** | `10000` | Vaso Jack Daniel’s N°7 + bebida a elección | `02_VASOS/17_VASO_JACK_DANIELS_N7_10000.jpg` |
+| 18 | **VASO JACK DANIEL’S HONEY** | `10000` | Vaso Jack Daniel’s Honey + bebida a elección | `02_VASOS/18_VASO_JACK_DANIELS_HONEY_10000.jpg` |
+| 19 | **VASO JACK DANIEL’S MANZANA** | `10000` | Vaso Jack Daniel’s Apple + bebida a elección | `02_VASOS/19_VASO_JACK_DANIELS_MANZANA_10000.jpg` |
 
 ## 📁 CERVEZA (3 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **CERVEZA LATA** | `3000` | `04_CERVEZAS/CERVEZA_LATA_$3000.jpg` |
-| **CERVEZA ZERO ALCOHOL** | `3000` | `04_CERVEZAS/CERVEZA_ZERO_ALCOHOL_$3000.jpg` |
-| **VASO MICHELADO** | `1000` | `04_CERVEZAS/VASO_MICHELADO_$1000.jpg` |
+| # | Producto | Precio (Sin Puntos) | Descripción en Vesti | Foto JPG |
+|---|---|:---:|---|---|
+| 1 | **CERVEZA LATA** | `3000` | Cerveza lata 350 ml variedad a elección según disponibilidad en barra | `03_CERVEZA/01_CERVEZA_LATA_3000.jpg` |
+| 2 | **CERVEZA ZERO ALCOHOL** | `3000` | Cerveza zero alcohol 350 ml | `03_CERVEZA/02_CERVEZA_ZERO_ALCOHOL_3000.jpg` |
+| 3 | **VASO MICHELADO** | `1000` | Base de jugo de limón natural + sal en el vaso | `03_CERVEZA/03_VASO_MICHELADO_1000.jpg` |
 
-## 📁 JAGER (2 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **3 SHOT JAGERMEISTER X $8.000** | `8000` | `05_TEQUILA_Y_JAGER/3_SHOT_JAGERMEISTER_X_$8.000_$8000.jpg` |
-| **MOJITO JAGER** | `8000` | `05_TEQUILA_Y_JAGER/MOJITO_JAGER_$8000.jpg` |
-
-## 📁 TEQUILA (2 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **3 SHOT TEQUILAS** | `7000` | `05_TEQUILA_Y_JAGER/3_SHOT_TEQUILAS_$7000.jpg` |
-| **3 SHOT DON JULIO + 1 AGUA SIN GAS X $15.000** | `15000` | `05_TEQUILA_Y_JAGER/3_SHOT_DON_JULIO_1_AGUA_SIN_GAS_X_$15.000_$15000.jpg` |
-
-## 📁 BEBIDAS Y AGUAS (15 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **AGUA SIN GAS** | `3000` | `06_BEBIDAS_Y_AGUAS/AGUA_SIN_GAS_$3000.jpg` |
-| **AGUA CON GAS** | `3000` | `06_BEBIDAS_Y_AGUAS/AGUA_CON_GAS_$3000.jpg` |
-| **LATA COCA COLA** | `3000` | `06_BEBIDAS_Y_AGUAS/LATA_COCA_COLA_$3000.jpg` |
-| **LATA COCA ZERO** | `3000` | `06_BEBIDAS_Y_AGUAS/LATA_COCA_ZERO_$3000.jpg` |
-| **LATA SPRITE** | `3000` | `06_BEBIDAS_Y_AGUAS/LATA_SPRITE_$3000.jpg` |
-| **LATA GINGER** | `3000` | `06_BEBIDAS_Y_AGUAS/LATA_GINGER_$3000.jpg` |
-| **LATA TONICA** | `3000` | `06_BEBIDAS_Y_AGUAS/LATA_TONICA_$3000.jpg` |
-| **POWERADE 1 LT** | `6000` | `06_BEBIDAS_Y_AGUAS/POWERADE_1_LT_$6000.jpg` |
-| **BOTELLA COCA COLA ZERO 1.5 LTS** | `10000` | `06_BEBIDAS_Y_AGUAS/BOTELLA_COCA_COLA_ZERO_1.5_LTS_$10000.jpg` |
-| **BOTELLA COCA COLA ORIGINAL 1,5 LTS** | `10000` | `06_BEBIDAS_Y_AGUAS/BOTELLA_COCA_COLA_ORIGINAL_15_LTS_$10000.jpg` |
-| **BOTELLA SPRITE 1,5 LTS** | `10000` | `06_BEBIDAS_Y_AGUAS/BOTELLA_SPRITE_15_LTS_$10000.jpg` |
-| **VASO JUGO** | `2500` | `06_BEBIDAS_Y_AGUAS/VASO_JUGO_$2500.jpg` |
-| **BOTELLA GINGER 1,5 LTS** | `10000` | `06_BEBIDAS_Y_AGUAS/BOTELLA_GINGER_15_LTS_$10000.jpg` |
-| **LATA SPRITE ZERO** | `3000` | `06_BEBIDAS_Y_AGUAS/LATA_SPRITE_ZERO_$3000.jpg` |
-| **POWERADE 850 ML** | `5000` | `06_BEBIDAS_Y_AGUAS/POWERADE_850_ML_$5000.jpg` |
+## 📁 BOTELLAS (13 productos)
+| # | Producto | Precio (Sin Puntos) | Descripción en Vesti | Foto JPG |
+|---|---|:---:|---|---|
+| 1 | **BOTELLA JACK N7 750 ML + BEBIDA 1,5 LTS** | `100000` | BOTELLA JACK N7 + BEBIDA 1,25 LT | `04_BOTELLAS/01_BOTELLA_JACK_N7_750_ML_BEBIDA_15_LTS_100000.jpg` |
+| 2 | **BOTELLA JACK APPLE 750 ML + BEBIDA 1,5 LTS** | `100000` | BOTELLA JACK APPLE + BEBIDA 1,5 LT | `04_BOTELLAS/02_BOTELLA_JACK_APPLE_750_ML_BEBIDA_15_LTS_100000.jpg` |
+| 3 | **BOTELLA JACK HONEY 750 ML + BEBIDA 1,5 LTS** | `100000` | BOTELLA JACK HONEY + BEBIDA 1,25 L | `04_BOTELLAS/03_BOTELLA_JACK_HONEY_750_ML_BEBIDA_15_LTS_100000.jpg` |
+| 4 | **BOTELLA ESPUMANTE 750 ML** | `20000` | BOTELLA DE ESPUMANTE A ELECCIÓN | `04_BOTELLAS/04_BOTELLA_ESPUMANTE_750_ML_20000.jpg` |
+| 5 | **BOTELLA JOHNNIE BLACK LABEL 750 ML + BEBIDA 1,5 LTS** | `110000` | BOTELLA JHONNIE BLACK 750 + BEBIDA 1,25 LTS | `04_BOTELLAS/05_BOTELLA_JOHNNIE_BLACK_LABEL_750_ML_BEBIDA_15_LTS_110000.jpg` |
+| 6 | **BOTELLA JOHNNIE RED LABEL 750 ML + BEBIDA 1,5 LTS** | `75000` | BOTELLA JHONNIE RED + BEBIDA 1,5 LTS | `04_BOTELLAS/06_BOTELLA_JOHNNIE_RED_LABEL_750_ML_BEBIDA_15_LTS_75000.jpg` |
+| 7 | **BOTELLA GIN GORDON’S 750ml + TÓNICA O BEBIDA 1,5** | `65000` | Botella Gin + Tónica o Bebida | `04_BOTELLAS/07_BOTELLA_GIN_GORDONS_750ml_TÓNICA_O_BEBIDA_15_65000.jpg` |
+| 8 | **BOTELLA TEQUILA + 2 AGUAS 500 ML** | `40000` | Botella tequila  + aguas 500ml | `04_BOTELLAS/08_BOTELLA_TEQUILA_2_AGUAS_500_ML_40000.jpg` |
+| 9 | **BOTELLA ALTO DEL CARMEN 35° 750 ML + BEBIDA 1,5 LTS** | `55000` | BOTELLA ALTO DEL CARMEN 35° 750 ML + BEBIDA 1,5 LTS | `04_BOTELLAS/09_BOTELLA_ALTO_DEL_CARMEN_35_750_ML_BEBIDA_15_LTS_55000.jpg` |
+| 10 | **BOTELLA MISTRAL 35° 750 ML + BEBIDA 1,5 LTS** | `60000` | BOTELLA PISCO MISTRAL 35° 750 ML + BEBIDA A ELECCIÓN | `04_BOTELLAS/10_BOTELLA_MISTRAL_35_750_ML_BEBIDA_15_LTS_60000.jpg` |
+| 11 | **BOTELLA JACK DANIEL’S BLACKBERRY + BEBIDA 1,5 LTS** | `100000` | BOTELLA JACK DANIEL’S BLACKBERRY + BEBIDA 1,25 | `04_BOTELLAS/11_BOTELLA_JACK_DANIELS_BLACKBERRY_BEBIDA_15_LTS_100000.jpg` |
+| 12 | **BOTELLA ALTO DEL CARMEN APPLE 750 ML + BEBIDA 1,5 LTS** | `65000` | Botella Alto 35º APPLE + Bebida 1,5 | `04_BOTELLAS/12_BOTELLA_ALTO_DEL_CARMEN_APPLE_750_ML_BEBIDA_15_LTS_65000.jpg` |
+| 13 | **BOTELLA WHISKY BALLANTINES + BEBIDA 1,5 LTS** | `70000` | Botella whisky ballantines + bebida 1,2 | `04_BOTELLAS/13_BOTELLA_WHISKY_BALLANTINES_BEBIDA_15_LTS_70000.jpg` |
 
 ## 📁 ENERGETICAS (1 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **MONSTER ENERGETICA 470 ML** | `5000` | `06_BEBIDAS_Y_AGUAS/MONSTER_ENERGETICA_470_ML_$5000.jpg` |
+| # | Producto | Precio (Sin Puntos) | Descripción en Vesti | Foto JPG |
+|---|---|:---:|---|---|
+| 1 | **MONSTER ENERGETICA 470 ML** | `5000` | Energética monster 470 ml variedades a elección | `05_ENERGETICAS/01_MONSTER_ENERGETICA_470_ML_5000.jpg` |
 
-## 📁 BEBESTIBLES (5 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **CONSOMÉ** | `2000` | `06_BEBIDAS_Y_AGUAS/CONSOMÉ_$2000.jpg` |
-| **VASO BEBIDA** | `1000` | `06_BEBIDAS_Y_AGUAS/VASO_BEBIDA_$1000.jpg` |
-| **VASO JUGO** | `1000` | `06_BEBIDAS_Y_AGUAS/VASO_JUGO_$1000.jpg` |
-| **TÉ** | `1000` | `06_BEBIDAS_Y_AGUAS/TÉ_$1000.jpg` |
-| **CAFE** | `1000` | `06_BEBIDAS_Y_AGUAS/CAFE_$1000.jpg` |
+## 📁 TEQUILA (2 productos)
+| # | Producto | Precio (Sin Puntos) | Descripción en Vesti | Foto JPG |
+|---|---|:---:|---|---|
+| 1 | **3 SHOT TEQUILAS** | `7000` | 3 Shot tequila + limon y sal | `06_TEQUILA/01_3_SHOT_TEQUILAS_7000.jpg` |
+| 2 | **3 SHOT DON JULIO + 1 AGUA SIN GAS X $15.000** | `15000` | 3 shot tequila Don Julio Silver + limón y sal + 1 agua sin gas | `06_TEQUILA/02_3_SHOT_DON_JULIO_1_AGUA_SIN_GAS_X_15.000_15000.jpg` |
 
-## 📁 MENU (10 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **HOT DOG** | `2000` | `07_MENU_Y_COMIDA/HOT_DOG_$2000.jpg` |
-| **COMPLETO ITALIANO** | `3490` | `07_MENU_Y_COMIDA/COMPLETO_ITALIANO_$3490.jpg` |
-| **COMPLETO ITALIANO XL** | `4990` | `07_MENU_Y_COMIDA/COMPLETO_ITALIANO_XL_$4990.jpg` |
-| **ASS ITALIANO** | `5490` | `07_MENU_Y_COMIDA/ASS_ITALIANO_$5490.jpg` |
-| **ASS ITALIANO XL** | `6990` | `07_MENU_Y_COMIDA/ASS_ITALIANO_XL_$6990.jpg` |
-| **ASS BARROS LUCO** | `5490` | `07_MENU_Y_COMIDA/ASS_BARROS_LUCO_$5490.jpg` |
-| **ASS BARROS LUCO XL** | `7490` | `07_MENU_Y_COMIDA/ASS_BARROS_LUCO_XL_$7490.jpg` |
-| **PAPAS FRITAS S** | `1990` | `07_MENU_Y_COMIDA/PAPAS_FRITAS_S_$1990.jpg` |
-| **PAPAS FRITAS M** | `3990` | `07_MENU_Y_COMIDA/PAPAS_FRITAS_M_$3990.jpg` |
-| **PIZZETA** | `4000` | `07_MENU_Y_COMIDA/PIZZETA_$4000.jpg` |
-
-## 📁 COVERS (17 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **COVER PISCOLA ALTO** | `50` | `08_COVERS/COVER_PISCOLA_ALTO_$50.jpg` |
-| **COVER MOJITO** | `50` | `08_COVERS/COVER_MOJITO_$50.jpg` |
-| **COVER RAMAZOTTI SPRITZ** | `50` | `08_COVERS/COVER_RAMAZOTTI_SPRITZ_$50.jpg` |
-| **COVER TROPICAL GIN** | `50` | `08_COVERS/COVER_TROPICAL_GIN_$50.jpg` |
-| **COVER JOHNNIE BLACK SOLO** | `50` | `08_COVERS/COVER_JOHNNIE_BLACK_SOLO_$50.jpg` |
-| **COVER VASO BEBIDA** | `50` | `08_COVERS/COVER_VASO_BEBIDA_$50.jpg` |
-| **COVER VASO VODKA** | `50` | `08_COVERS/COVER_VASO_VODKA_$50.jpg` |
-| **COVER VASO RON AÑEJO** | `50` | `08_COVERS/COVER_VASO_RON_AÑEJO_$50.jpg` |
-| **COVER JOHNNIE RED + BEBIDA** | `50` | `08_COVERS/COVER_JOHNNIE_RED_BEBIDA_$50.jpg` |
-| **COVER BOTELLA ESPUMANTE** | `1` | `08_COVERS/COVER_BOTELLA_ESPUMANTE_$1.jpg` |
-| **COVER BOTELLA TEQUILA** | `50` | `08_COVERS/COVER_BOTELLA_TEQUILA_$50.jpg` |
-| **COVER BOTELLA ALTO 35 750ML** | `50` | `08_COVERS/COVER_BOTELLA_ALTO_35_750ML_$50.jpg` |
-| **COVER BOTELLA JACK DANIEL`S 750ML** | `50` | `08_COVERS/COVER_BOTELLA_JACK_DANIELS_750ML_$50.jpg` |
-| **COVER WHISKY MANZANA** | `50` | `08_COVERS/COVER_WHISKY_MANZANA_$50.jpg` |
-| **COVER MONSTER** | `50` | `08_COVERS/COVER_MONSTER_$50.jpg` |
-| **COVER AGUA** | `50` | `08_COVERS/COVER_AGUA_$50.jpg` |
-| **COVER VASO JOHNNIE BLACK** | `50` | `08_COVERS/COVER_VASO_JOHNNIE_BLACK_$50.jpg` |
-
-## 📁 ENTRADAS (6 productos)
-| Producto | Precio (Sin Puntos) | Foto JPG |
-|---|---|---|
-| **VIP** | `20000` | `09_ENTRADAS/VIP_$20000.jpg` |
-| **ESTACIONAMIENTO** | `5000` | `09_ENTRADAS/ESTACIONAMIENTO_$5000.jpg` |
-| **GUARDARROPÍA 1 PRENDA** | `2000` | `09_ENTRADAS/GUARDARROPÍA_1_PRENDA_$2000.jpg` |
-| **GENERAL** | `10000` | `09_ENTRADAS/GENERAL_$10000.jpg` |
-| **GOLDEN** | `30000` | `09_ENTRADAS/GOLDEN_$30000.jpg` |
-| **ESTACIONAMIENTO MOTO** | `3000` | `09_ENTRADAS/ESTACIONAMIENTO_MOTO_$3000.jpg` |
+## 📁 BEBIDAS Y AGUAS (15 productos)
+| # | Producto | Precio (Sin Puntos) | Descripción en Vesti | Foto JPG |
+|---|---|:---:|---|---|
+| 1 | **AGUA SIN GAS** | `3000` | Agua sin gas 500 ml | `07_BEBIDAS_Y_AGUAS/01_AGUA_SIN_GAS_3000.jpg` |
+| 2 | **AGUA CON GAS** | `3000` | Agua con gas 500 ml | `07_BEBIDAS_Y_AGUAS/02_AGUA_CON_GAS_3000.jpg` |
+| 3 | **LATA COCA COLA** | `3000` | Lata coca cola | `07_BEBIDAS_Y_AGUAS/03_LATA_COCA_COLA_3000.jpg` |
+| 4 | **LATA COCA ZERO** | `3000` | Lata coca cola zero | `07_BEBIDAS_Y_AGUAS/04_LATA_COCA_ZERO_3000.jpg` |
+| 5 | **LATA SPRITE** | `3000` | Lata sprite | `07_BEBIDAS_Y_AGUAS/05_LATA_SPRITE_3000.jpg` |
+| 6 | **LATA GINGER** | `3000` | Lata ginger | `07_BEBIDAS_Y_AGUAS/06_LATA_GINGER_3000.jpg` |
+| 7 | **LATA TONICA** | `3000` | Lata agua tonica | `07_BEBIDAS_Y_AGUAS/07_LATA_TONICA_3000.jpg` |
+| 8 | **POWERADE 1 LT** | `6000` | Isotonica 1 Litro | `07_BEBIDAS_Y_AGUAS/08_POWERADE_1_LT_6000.jpg` |
+| 9 | **BOTELLA COCA COLA ZERO 1.5 LTS** | `10000` | Coca cola 1.5L | `07_BEBIDAS_Y_AGUAS/09_BOTELLA_COCA_COLA_ZERO_1.5_LTS_10000.jpg` |
+| 10 | **BOTELLA COCA COLA ORIGINAL 1,5 LTS** | `10000` | COCA COLA 1,5 LT | `07_BEBIDAS_Y_AGUAS/10_BOTELLA_COCA_COLA_ORIGINAL_15_LTS_10000.jpg` |
+| 11 | **BOTELLA SPRITE 1,5 LTS** | `10000` | SPRITE 1,5 LT | `07_BEBIDAS_Y_AGUAS/11_BOTELLA_SPRITE_15_LTS_10000.jpg` |
+| 12 | **VASO JUGO** | `2500` | vaso jugo 500 ml | `07_BEBIDAS_Y_AGUAS/12_VASO_JUGO_2500.jpg` |
+| 13 | **BOTELLA GINGER 1,5 LTS** | `10000` | bebida ginger 1,5 lts | `07_BEBIDAS_Y_AGUAS/13_BOTELLA_GINGER_15_LTS_10000.jpg` |
+| 14 | **LATA SPRITE ZERO** | `3000` | Lata Sprite zero azucar 350 ml | `07_BEBIDAS_Y_AGUAS/14_LATA_SPRITE_ZERO_3000.jpg` |
+| 15 | **POWERADE 850 ML** | `5000` | Powerade 850 ml | `07_BEBIDAS_Y_AGUAS/15_POWERADE_850_ML_5000.jpg` |
